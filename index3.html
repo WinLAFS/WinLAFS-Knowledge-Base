@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.0.1  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="WinLAFS tahoe-lafs">
+	<META NAME="CHANGED" CONTENT="20150419;17265475">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.59cm 27.94cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		P { margin-bottom: 0.21cm }
+		A:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR" STYLE="border: none; padding: 0cm">
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT SIZE=4><B>WinLAFS:</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=4><B>Windows
+Least-Authority File Store</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"> <FONT SIZE=4><B>How
+to install AllMyData_Tahoe_Lafs 1.10.0</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"> <FONT SIZE=4><B>on
+Windows 7 Home Premium 64 bit</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">[i installed
+already WinLAFS on 7win32 see WinLAFS:How to install
+AllMyData_Tahoe_Lafs 1.10.0 on Windows 7 bit 32 ; it should be
+possible to install python for 32bit windows and 32bit dependencies
+on win7bit64 ]</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">[but i gave 64bit
+a try]</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">__________________________________________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">If
+you are attracted by errors, failures and user warnings on this Site,
+</FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">but
+only like to install </FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">allmydata-tahoe-1.10.0
+then </FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">start with 0
+(zero):</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">___________________________________________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">0:
+Successful install may fail if you used already python:</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">0a:
+uninstalled all installed dependencies related to python</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">0b:
+uninstalled python </FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">0c:
+delete the python directory</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">0d:
+delete the AllMyData_Tahoe_Lafs directory</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">0e:
+start from scratch at A.</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">____________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><B>installing
+tahoe-lafs on 7win64 with twisted 13</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">____________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">preinstall:	</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">python-2.7.9.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">Twisted-13.0.0.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">pywin32-217.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">copy:</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">allmydata-tahoe-1.10.0 </FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">egenix_pyopenssl-0.13.7-py2.7-win-amd64.egg
+</FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">_______________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 0.18cm"><FONT SIZE=2 STYLE="font-size: 11pt">A.
+Unzip and Copy:	 allmydata-tahoe-1.10.0 to c:\lafs (unzip and rename
+to &quot;lafs&quot; only)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US">	from
+</SPAN></FONT><A HREF="https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">B.
+We don't follow: 	C:\lafs\docs\quickstart.rst (open with word pad)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">C.
+Install :	 </FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">python-2.7.9.amd64.msi
+</FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">at c:\python27 (
+check: set Add pyton.exe to Path</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">and
+advanced-&gt; check: compile  .py files to byte code after
+installation)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><SPAN LANG="en-US">	from
+</SPAN><A HREF="https://www.python.org/downloads/release/python-279/"><FONT COLOR="#0000ff"><SPAN LANG="en-US"><U>https://www.python.org/downloads/release/python-279/</U></SPAN></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US">		</SPAN></FONT><A HREF="https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64.msi</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">D.
+Install:	</FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">Twisted-13.0.0.win-amd64-py2.7.msi</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US">	from
+</SPAN></FONT><A HREF="http://twistedmatrix.com/Releases/Twisted/13.0/"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://twistedmatrix.com/Releases/Twisted/13.0/</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="http://twistedmatrix.com/Releases/Twisted/13.0/Twisted-13.0.0.win-amd64-py2.7.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://twistedmatrix.com/Releases/Twisted/13.0/Twisted-13.0.0.win-amd64-py2.7.msi</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">E.
+Install:		</FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">pywin32-217.win-amd64-py2.7.exe</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/pywin32-217.win-amd64-py2.7.exe/download"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/pywin32-217.win-amd64-py2.7.exe/download</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">F.Copy:
+		</FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">egenix_pyopenssl-0.13.7-py2.7-win-amd64.egg
+</FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">	and		
+</FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"> <FONT SIZE=2 STYLE="font-size: 11pt">	Rename:	</FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">to
+</FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">			c:\tahoe-deps\</FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">pyopenssl-0.13.7-py2.7-win-amd64.egg
+</FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US">	from
+	</SPAN></FONT></FONT><A HREF="https://www.egenix.com/products/python/pyOpenSSL/"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://www.egenix.com/products/python/pyOpenSSL/</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">		[scroll
+down till:</FONT></FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"><B>
+Egg Distribution Installation</B></FONT></FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">
+]</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US">	</SPAN></FONT></FONT><A HREF="https://downloads.egenix.com/python/index/ucs2/egenix-pyopenssl/0.13.7/egenix_pyopenssl-0.13.7-py2.7-win-amd64.egg"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://downloads.egenix.com/python/index/ucs2/egenix-pyopenssl/0.13.7/egenix_pyopenssl-0.13.7-py2.7-win-amd64.egg</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">G.</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><U>Run
+as administrator </U></FONT><FONT SIZE=2 STYLE="font-size: 11pt">:		C:\lafs&gt;</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>python
+setup.py build</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">(Start
+menu/All Programs/Command Prompt/right click/</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>Run
+as administrator </B></FONT><FONT SIZE=2 STYLE="font-size: 11pt">/yes&gt;
+cd c:\lafs)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		or
+like to read it all at :	C:\lafs\setup_build_bin.txt</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"> <FONT SIZE=2 STYLE="font-size: 11pt">	Run
+as administrator :	C:\lafs&gt;</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>python
+setup.py build  &gt; setup_build_bin.txt</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">						(go
+drink a cup of coffee 3 min)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>1.
+Result: run thru ( it copying many somethings to -&gt;
+build\lib\allmydata\...\...)</B></I></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">H.
+</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><U>Run as administrator </U></FONT><FONT SIZE=2 STYLE="font-size: 11pt">:
+	C:\lafs&gt;</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>bin\tahoe
+--version</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>2.Result:
+</B></I></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>allmydata-tahoe:
+1.10.0 [NL]foolscap: 0.7.0 [NL]pycryptopp:
+0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec:
+1.4.22 [NL]Twisted: 13.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface:
+unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1
+[NL]</B></I></FONT><FONT SIZE=2 STYLE="font-size: 11pt"><I><U><B>pyOpenSSL:
+0.13.7 </B></U></I></FONT><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>[NL]simplejson:
+3.6.5 [NL]</B></I></FONT><FONT SIZE=2 STYLE="font-size: 11pt"><I><U><B>pycrypto:
+2.5 </B></U></I></FONT><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>[NL]pyasn1:
+0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW LINE</B></I></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">i.
+Check: Test Grid is online</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US">	Tahoe
+Test Grid Status at </SPAN></FONT><A HREF="http://stats.pingdom.com/cvvac5t8l4fv/1300061"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://stats.pingdom.com/cvvac5t8l4fv/1300061</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">J.</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><U>Run
+as administrator </U></FONT><FONT SIZE=2 STYLE="font-size: 11pt">:
+	C:\lafs&gt;</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>python
+setup.py trial </B></FONT><FONT SIZE=2 STYLE="font-size: 11pt">(self-tests)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">			if
+like to read all at C:\lafs\trial_test_result.txt</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		Run
+as administrator :C:\lafs&gt;</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>python
+setup.py trial &gt; trial_test_result.txt</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">							(go
+drink a cup of coffee 19min)</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>3.
+Result: </B></I></FONT><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>PASSED
+(skips=14, expectedFailures=3, successes=1117)</B></I></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	This
+indicates you installed tahoe-lafs successful.</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	==================================================</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">__________________________________________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">If
+you are attracted by errors, failures and user warnings on this Site,
+</FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">but
+only like to install </FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">allmydata-tahoe-1.10.0
+then </FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">start with 0
+(zero):</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">___________________________________________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">----------------------------------------------------------------------------------------------</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><B>Some
+Tahoe_Lafs Installation Problems on windows 7 bit 64</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">-------------------------------------------------------------------------------------------</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">[ because of my
+&quot;success&quot; installing  tahoe-lafs at win7bit32, 
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"> i thought i am
+now a already skilled tahoe-lafs installer ] 
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 0.18cm"><FONT SIZE=2 STYLE="font-size: 11pt">I.
+Install:	 allmydata-tahoe-1.10.0 at c:\lafs (unzip and rename to &quot;
+lafs&quot; only)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US">	from
+</SPAN></FONT><A HREF="https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">II.
+allowances for &quot;C:\lafs&quot; :</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><U><B>As
+admin </B></U></FONT><FONT SIZE=2 STYLE="font-size: 11pt"><U>selekt
+user &quot;everybody&quot;  allow everything (all) for user
+&quot;everybody&quot;(all users)</U></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		start/computer/&quot;C:\&quot;/Mouse
+right click at /&quot;C:\lafs&quot;/properties/security</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		/edit/add/advanced/look
+for (users)/(select)/everybody (all)/OK/OK/</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		select
+user name /everybody (all)/|V|(check)/</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>allow</B></FONT><FONT SIZE=2 STYLE="font-size: 11pt">/all/and/allow/alter/OK</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">	[this
+is a translation of the &quot;path&quot;, look out for similar
+expressions if necessary]</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		[At
+this time i thought i solved a tmp-write problem, </FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		but
+successful was only the RUN AS ADMINISTRATOR method ]</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">III.
+follow: 	C:\lafs\docs\quickstart.rst (open with word pad)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">IV.
+Install :	 python-2.7.9.msi at c:\python27 ( check: set Add pyton.exe
+to Path and</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"> <FONT SIZE=2 STYLE="font-size: 11pt">			advanced-&gt;
+check: compile  .py files to byte code after installation)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US">	from
+</SPAN></FONT><A HREF="https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">V.
+Run:	C:\lafs&gt;python setup.py build</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		(Start/Program
+files/command prompt &gt; cd c:\lafs)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">		or
+like to read it all at :	C:\lafs\setup_build_bin.txt</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Run:	C:\lafs&gt;python setup.py
+build  &gt; setup_build_bin.txt</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">						(go
+drink a cup of coffee)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my
+1.Result: </B></I></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><B>error:
+Installed distribution twisted 12.1.0 conflicts with requirement
+twisted&gt;=13.0</B></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">VI.
+Install:	</FONT><FONT COLOR="#000000">Twisted-13.0.0.win-amd64-py2.7.msi</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><SPAN LANG="en-US">		from
+</SPAN><A HREF="http://twistedmatrix.com/Releases/Twisted/13.0/"><FONT COLOR="#0000ff"><SPAN LANG="en-US"><U>http://twistedmatrix.com/Releases/Twisted/13.0/</U></SPAN></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="http://twistedmatrix.com/Releases/Twisted/13.0/Twisted-13.0.0.win-amd64-py2.7.msi"><FONT COLOR="#0000ff"><SPAN LANG="en-US"><U>http://twistedmatrix.com/Releases/Twisted/13.0/Twisted-13.0.0.win-amd64-py2.7.msi</U></SPAN></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">VI.
+Delete: C:\lafs</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">VII.
+Try again I.+II.+V. (install lafs + run lafs setup build bin)</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my
+2. Result: 	error: Setup script exited with error: Unable to find
+vcvarsall.bat</B></I></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[reason:
+script like to compile and install cffi 0.9.2]</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><B>[</B></FONT><FONT COLOR="#000000">Twisted-13.0.0
+adds </FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>tls - packages
+that are needed to work with TLS. = </B></FONT><FONT SIZE=2 STYLE="font-size: 11pt">
+  service_identity]	</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[dependencies
+of service_identity:]</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[------------------------------------------------------------------------------------------------------</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="https://pypi.python.org/pypi/service_identity"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/service_identity</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">service-identity==14.0.0	
+requires	pyopenssl&gt;=0.12</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="https://downloads.egenix.com/python/index/ucs2/egenix-pyopenssl/0.13.7/egenix_pyopenssl-0.13.7-py2.7-win-amd64.egg"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://downloads.egenix.com/python/index/ucs2/egenix-pyopenssl/0.13.7/egenix_pyopenssl-0.13.7-py2.7-win-amd64.egg</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="https://www.egenix.com/cryptodownload/?file=egenix-pyopenssl-0.13.7.win-amd64-py2.7.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://www.egenix.com/cryptodownload/?file=egenix-pyopenssl-0.13.7.win-amd64-py2.7.msi</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">	pyopenssl-0.13.7-py2.7-win-amd64.egg		requires	cryptography&gt;=0.2.1
+ 									+	(six&gt;=1.5.2 )</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.4-cp27-none-win_amd64.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.4-cp27-none-win_amd64.whl</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.5-cp27-none-win_amd64.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.5-cp27-none-win_amd64.whl</U></SPAN></FONT></FONT></A></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">		cryptography-0.5-cp27-none-win_amd64.whl	</FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">
+requires	 cffi&gt;=0.8  </FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><A HREF="http://www.lfd.uci.edu/~gohlke/pythonlibs/z94jfosk/cffi-0.9.2-cp27-none-win_amd64.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://www.lfd.uci.edu/~gohlke/pythonlibs/z94jfosk/cffi-0.9.2-cp27-none-win_amd64.whl</U></SPAN></FONT></FONT></A><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US">
+ </SPAN></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">			cffi-0.9.2-cp27-none-win_amd64.whl
+	 </FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">requires	pycparser
+</FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">---------------------------------------------------------------------------------------------------------------------------]</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">tabula rasa:
+0a-0e</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">I.-IV. + VI.</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">copy 	
+<FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">egenix-</FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt"><U>pyopenssl-0.13.7-py2.7-win-amd64.egg</U></FONT><FONT SIZE=2 STYLE="font-size: 11pt">		to
+	c\tahoe-deps</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">copy	
+<FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">cffi-0.9.2-cp27-none-win_amd64.whl
+		 to c:\lafs</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">copy
+	<FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">cryptography-0.5-cp27-none-win_amd64.whl	
+to c:\lafs</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">pip install
+<FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">cffi-0.9.2-cp27-none-win_amd64.whl
+</FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">pip
+install cryptography-0.5-cp27-none-win_amd64.whl</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">install
+<FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">egenix-pyopenssl-0.13.7.win-amd64-py2.7.msi</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">run
+thru </FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">install
+win32api= pywin32</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">FAILED
+(skips=14, expectedFailures=3, failures=1, errors=4, successes=1116)
+[1]</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">-------------------------------------------------------------------------------------------------------------------------</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">try install with
+egg only no msi (<FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">egenix-pyopenssl-0.13.7.win-amd64-py2.7
+)</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">----------------------------------------------------------------------------------------------------</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">tabula rasa:
+0a-0e</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">I.-IV. + VI.</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">preinstall: 
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">pyton27</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000">Twisted-13.0.0.win-amd64-py2.7.msi</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">win32api
+= pywin32</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">copy 	
+<FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">egenix-</FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt"><U>pyopenssl-0.13.7-py2.7-win-amd64.egg</U></FONT><FONT SIZE=2 STYLE="font-size: 11pt">	
+ 	to	 c\tahoe-deps</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">error:
+Setup script exited with error: Unable to find vcvarsall.bat</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[need
+pip install off cffi ?] no -&gt; rename</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%">rename [!]+copy
+	<FONT SIZE=2 STYLE="font-size: 11pt"><U>pyopenssl-0.13.7-py2.7-win-amd64.egg</U></FONT><FONT SIZE=2 STYLE="font-size: 11pt">	
+ [!]	to c\tahoe-deps</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">FAILED
+(skips=14, expectedFailures=3, failures=1, errors=3, successes=1116)</FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[------------------------How
+to prevent the last failure
+?---------------------------------------------------------</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><B>[
+and we know now any shell from an administrator account is not an
+administrator shell</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><B>[
+this step is not necessary if you run as administrator:</B></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[
+II. allowances for &quot;C:\lafs&quot; :</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><U><B>[
+As admin </B></U></FONT><FONT SIZE=2 STYLE="font-size: 11pt"><U>selekt
+user &quot;everybody&quot;  allow everything (all) for user
+&quot;everybody&quot;(all users)</U></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[		start/computer/&quot;C:\&quot;/Mouse
+right click at /&quot;C:\lafs&quot;/properties/security</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[		/edit/add/advanced/look
+for (users)/(select)/everybody (all)/OK/OK/</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[		select
+user name /everybody (all)/|V|(check)/</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>allow</B></FONT><FONT SIZE=2 STYLE="font-size: 11pt">/all/and/allow/alter/OK</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">[	[this
+is a translation of the &quot;path&quot;, look out for similar
+expressions if necessary]</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"><B>[
+it helps partly to shrink the failures to only one, but you still get
+a fail </B></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">------------------------------------------------------------------------------------------------------------]</FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">__________________________________________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">If
+you are attracted by errors, failures and user warnings on this Site,
+</FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">but
+only like to install </FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt">allmydata-tahoe-1.10.0
+then </FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">start with 0
+(zero):</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt">___________________________________________________________________________</FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><B>Conclusion:</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><B>On
+windows, you can not only follow the </B></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>quickstart.rst
+</B></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>On
+windows, you need pre-installation of: python27,Twisted and  pywin32</B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>On
+windows, you need to run the scripts as Administrator, </B></FONT></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>		not
+only an account with admin user rights.</B></FONT></FONT></FONT></P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><FONT SIZE=2 STYLE="font-size: 11pt"><B>On
+windows 64 you need additional
+</B></FONT><FONT COLOR="#000000"><FONT SIZE=2 STYLE="font-size: 11pt"><B>egenix_pyopenssl-0.13.7-py2.7-win-amd64.egg
+</B></FONT></FONT>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.35cm; line-height: 115%"><BR><BR>
+</P>
+</BODY>
+</HTML>
