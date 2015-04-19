@@ -1,0 +1,917 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.0.1  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="WinLAFS tahoe-lafs">
+	<META NAME="CHANGED" CONTENT="20150419;17004323">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21.59cm 27.94cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+		P { margin-bottom: 0.21cm; color: #000000 }
+		P.western { font-family: "Calibri", sans-serif; font-size: 12pt; so-language: de-DE }
+		P.cjk { font-family: "Calibri", sans-serif; font-size: 12pt; so-language: zh-CN }
+		P.ctl { font-family: "Calibri", sans-serif }
+		A.western:link { so-language: zxx }
+		A.cjk:link { so-language: zxx }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="de-DE" TEXT="#000000" DIR="LTR" STYLE="border: none; padding: 0cm">
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=4><B>WinLAFS:</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=4><B>How to install AllMyData_Tahoe_Lafs 1.10.0 on Windows
+7 bit 32</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2>[if you like to install tahoe-lafs at win7bit64 look out
+for </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2>WinLAFS: How to install AllMyData_Tahoe_Lafs 1.10.0 on
+Windows 7 bit 64 ]</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">__________________________________________________________________________</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">If you are attracted by errors,
+failures and user warnings on this Site, </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">but only like to install
+<FONT COLOR="#000000">allmydata-tahoe-1.10.0 then </FONT>start with 0
+(zero):</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">___________________________________________________________________________</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">0: Successful install may fail
+if you used already python:</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">0a: uninstall all installed
+dependencies related to python</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">0b: uninstall python </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">0c: delete the python directory</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">0d: delete the
+AllMyData_Tahoe_Lafs directory</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">0e: start from scratch at A.</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">____________________________________________</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>installing tahoe-lafs on
+7win32 with twisted 13</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">____________________________________________</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">A. Install:	
+allmydata-tahoe-1.10.0 at c:\lafs (unzip and rename to &quot;lafs&quot;
+only)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	from
+</FONT><A CLASS="western" HREF="https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">B. We don't follow:
+	C:\lafs\docs\quickstart.rst (open with word pad)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">C. Install :	 python-2.7.9.msi
+at c:\python27 ( check: set Add pyton.exe to Path and</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt">			advanced-&gt; check: compile
+ .py files to byte code after installation)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	from
+</FONT><A CLASS="western" HREF="https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<BR><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">D.
+Install:	Twisted-13.0.0.win32-py2.7.msi </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	from
+</FONT><A CLASS="western" HREF="https://pypi.python.org/pypi/Twisted/13.0.0"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/Twisted/13.0.0</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	</FONT><A CLASS="western" HREF="https://pypi.python.org/packages/2.7/T/Twisted/Twisted-13.0.0.win32-py2.7.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/T/Twisted/Twisted-13.0.0.win32-py2.7.msi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<BR><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%"><A NAME="__DdeLink__5_1530656139"></A>
+<FONT SIZE=2 STYLE="font-size: 11pt">E.
+Install:		<FONT COLOR="#000000">pywin32-217.win32-py2.7.exe</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/pywin32-217.win32-py2.7.exe/download"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/pywin32-217.win32-py2.7.exe/download</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">F. <U><B>Run as administrator
+</B></U>:	C:\lafs&gt;<B>python setup.py build</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">(Start menu/All Programs/
+Accessories /Command Prompt/right click/<B>Run as administrator </B>/jes&gt;
+cd c:\lafs)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		<B>or</B> like to read it all
+at :	C:\lafs\<FONT FACE="Courier New, monospace">setup_build_bin.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	</FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">Run:	C:\lafs&gt;</FONT><FONT SIZE=2 STYLE="font-size: 11pt"><B>python
+setup.py build  &gt; setup_build_bin.txt</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">						(go drink a cup of coffee)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>1. Result: run true ( it
+copying many somethings to -&gt; build\lib\allmydata\...\...)</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">G.<B>Run as administrator </B>:
+	C:\lafs&gt;<B>bin\tahoe --version</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>2.Result: </B></I></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>allmydata-tahoe: 1.10.0
+[NL]foolscap: 0.7.0 [NL]pycryptopp:
+0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec:
+1.4.22 [NL]Twisted: 13.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface:
+unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1
+[NL]pyOpenSSL: 0.13.1 [NL]simplejson: 3.6.5 [NL]pycrypto: 2.4.1
+[NL]pyasn1: 0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW
+LINE</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">H. Check: Test Grid is online</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Tahoe Test Grid Status at
+</FONT><A CLASS="western" HREF="http://stats.pingdom.com/cvvac5t8l4fv/1300061"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://stats.pingdom.com/cvvac5t8l4fv/1300061</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">i.<U><B> Run as administrator </B></U>:
+	C:\lafs&gt;<FONT FACE="Courier New, monospace"><B>python setup.py
+trial </B></FONT><FONT FACE="Courier New, monospace">(self-tests)</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	if
+like to read all at </FONT>C:\lafs\<FONT FACE="Courier New, monospace">trial_test_result.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	Run:</FONT>C:\lafs&gt;<FONT FACE="Courier New, monospace"><B>python
+setup.py trial &gt; trial_test_result.txt</B></FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">								(go drink a cup of
+coffee)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>3.
+Result: <FONT FACE="Courier New, monospace">PASSED (skips=14,
+expectedFailures=3, successes=1117)</FONT></B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	This
+indicates you installed tahoe-lafs successful.</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	==================================================</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	if
+you get a failed:</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	check
+F.-i. if you don't </FONT><U><B>Run as administrator</B></U> ,  <FONT FACE="Courier New, monospace">you
+may get:</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">						</FONT>FAILED
+(skips=7, errors=19, successes=262 ) </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 11pt">	check
+2.Result: something different?</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 11pt">			maybe
+you use already Python with more actual dependencies</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 11pt">			start
+again with 0 (zero):</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm"><FONT SIZE=2 STYLE="font-size: 11pt">			try
+uninstalling python, uninstalling python related dependencies ,
+			deleting its directory and deleting the tahoe_lafs directory;</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">__________________________________________________________________________</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">If you are attracted by errors,
+failures and user warnings on this Site, </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">but only like to install
+<FONT COLOR="#000000">allmydata-tahoe-1.10.0 then </FONT>start with 0
+(zero):</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">___________________________________________________________________________</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<BR><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">This following is about what
+happens if you follow the Install  Advise at</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">C:\lafs\docs\quickstart.rst
+(open with wordpad)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">and this is the wrong , long,
+hard way along errors,failures and warnings.</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">____________________________________________________________________________</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>Some Tahoe_Lafs Installation
+Problems on windows 7 bit 32</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">I. Install:	
+allmydata-tahoe-1.10.0 at c:\lafs (unzip and rename to &quot; lafs&quot;
+only)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	from
+</FONT><A CLASS="western" HREF="https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">II. follow:
+	C:\lafs\docs\quickstart.rst (open with word pad)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">III. Install :	 python-2.7.9.msi
+at c:\python27 ( check: set Add pyton.exe to Path and</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt">			advanced-&gt; check: compile
+ .py files to byte code after installation)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	from
+</FONT><A CLASS="western" HREF="https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">IV. Run:	C:\lafs&gt;python
+setup.py build  	</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		(Start/Program files/command
+prompt &gt; cd c:\lafs)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		or like to read it all at
+:	C:\lafs\<FONT FACE="Courier New, monospace">setup_build_bin.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	</FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">Run:	C:\lafs&gt;python
+setup.py build </FONT><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">
+&gt; setup_build_bin.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">						(go drink a cup of coffee)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my 1.Result: </B></I></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>error: Installed
+distribution twisted 12.1.0 conflicts with requirement twisted&gt;=13.0</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">V.
+Install:	Twisted-13.0.0.win32-py2.7.msi </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	from
+</FONT><A CLASS="western" HREF="https://pypi.python.org/pypi/Twisted/13.0.0"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/Twisted/13.0.0</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/packages/2.7/T/Twisted/Twisted-13.0.0.win32-py2.7.msi"><FONT COLOR="#0000ff"><FONT FACE="Times New Roman, serif"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/T/Twisted/Twisted-13.0.0.win32-py2.7.msi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">VI. Delete: C:\lafs</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">VII. Try again I.+IV. (install
+lafs + run lafs setup build bin)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my 2. Result: run true (
+it copying many somethings to -&gt; build\lib\allmydata\...\...)</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">VIII. Run: 	C:\lafs&gt;bin\tahoe
+--version</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my 3.Result: </B></I></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>allmydata-tahoe: 1.10.0
+[NL]foolscap: 0.7.0 [NL]pycryptopp:
+0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec:
+1.4.22 [NL]Twisted: 13.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface:
+unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1
+[NL]pyOpenSSL: 0.13.1 [NL]simplejson: 3.6.5 [NL]pycrypto: 2.4.1
+[NL]pyasn1: 0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW
+LINE</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">IX. Run: 	C:\lafs&gt;<FONT FACE="Courier New, monospace">python
+setup.py trial (self-tests)</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	if
+like to read all at </FONT>C:\lafs\<FONT FACE="Courier New, monospace">trial_test_result.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	Run:</FONT>C:\lafs&gt;<FONT FACE="Courier New, monospace">python
+setup.py trial &gt; trial_test_result.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my 4. Result: FAILED
+(skips=7, errors=19, successes=262 ) </B></I></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>[at this point i could be
+nearly ready, but i don't know what was wrong </I></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>and made the wrong
+conclusions:]</I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>[So many errors maybe the 
+Tahoe Test Grid isn't online]</I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">X. Check: Tahoe Test Grid Status
+at </FONT><A CLASS="western" HREF="http://stats.pingdom.com/cvvac5t8l4fv/1300061"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://stats.pingdom.com/cvvac5t8l4fv/1300061</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>[reading
+C:\lafs\</I></FONT><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt"><I>trial_test_result.txt
+so many errors related with Twisted, maybe we need a newer version we
+will take Twisted 15 we find here
+</I></FONT></FONT><A CLASS="western" HREF="https://pypi.python.org/pypi/Twisted"><FONT COLOR="#0000ff"><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><I><U>https://pypi.python.org/pypi/Twisted</U></I></SPAN></FONT></FONT></FONT></A>
+]</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">XI. cut all down: </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Uninstall:
+	Twisted-13.0.0.win32-py2.7.msi </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Uninstall:	python-2.7.9.msi </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Delete: 		C:\tahoe</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Delete:		C:\python27</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XII. new from scratch: I.+ III. 
+(install lafs + python27)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XIII. 
+Install:	Twisted-15.0.0.win32-py2.7.msi </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	</FONT><A CLASS="western" HREF="https://pypi.python.org/packages/2.7/T/Twisted/Twisted-15.0.0.win32-py2.7.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/T/Twisted/Twisted-15.0.0.win32-py2.7.msi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		from 
+</FONT><A CLASS="western" HREF="https://pypi.python.org/pypi/Twisted/15.0.0"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/Twisted/15.0.0</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XIV.  Run:	C:\lafs&gt;python
+setup.py build  	</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		(Start/Program files/command
+prompt &gt; cd c:\lafs)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		or like to read it all at
+:	C:\lafs\<FONT FACE="Courier New, monospace">setup_build_bin.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	</FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">Run:	C:\lafs&gt;python
+setup.py build </FONT><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">
+&gt; setup_build_bin.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">						(go drink a cup of coffee)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>my 5<I>. Result: run true (
+it copying many somethings to -&gt; build\lib\allmydata\...\...)</I></B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XV. Run: 	C:\lafs&gt;bin\tahoe
+--version</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my 6.Result: </B></I></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>:0: UserWarning: You do
+not have a working installation of the service_identity module: 'No
+module named service_identity'.  Please install it from
+&lt;</B></I></FONT><A CLASS="western" HREF="https://pypi.python.org/pypi/service_identity"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><I><U><B>https://pypi.python.org/pypi/service_identity</B></U></I></SPAN></FONT></FONT></A>&gt;
+and make sure all of its dependencies are satisfied.  Without the
+service_identity module and a recent enough pyOpenSSL to support it,
+Twisted can perform only rudimentary TLS client hostname
+verification.  Many valid certificate/hostname mappings may be
+rejected.</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>allmydata-tahoe: 1.10.0
+[NL]foolscap: 0.7.0 [NL]pycryptopp:
+0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec:
+1.4.22 [NL]Twisted: 15.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface:
+unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1
+[NL]pyOpenSSL: 0.13.1 [NL]simplejson: 3.6.5 [NL]pycrypto: 2.4.1
+[NL]pyasn1: 0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW
+LINE</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XVI. Run: 	C:\lafs&gt;<FONT FACE="Courier New, monospace">python
+setup.py trial (self-tests)</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	if
+like to read all at </FONT>C:\lafs\<FONT FACE="Courier New, monospace">trial_test_result.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	Run:</FONT>C:\lafs&gt;<FONT FACE="Courier New, monospace">python
+setup.py trial &gt; trial_test_result.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my 7. Result: FAILED
+(skips=7, failures=1, errors=19, successes=261)</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XVII. Check: Tahoe Test Grid
+Status at </FONT><A CLASS="western" HREF="http://stats.pingdom.com/cvvac5t8l4fv/1300061"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://stats.pingdom.com/cvvac5t8l4fv/1300061</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">[seams we have more problems
+than before.]</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">many errors may related to
+Twisted</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">have a look at the dependencies
+of  Twisted15</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">read |V|=  is in the list of
+tahoe-lafs dependencies</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">read |X|= is not in the list of
+tahoe-lafs dependencies</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">read |W|= 6.Result:User Warning:
+service_identity, its dependencies and pyOpenSSL</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; line-height: 0.18cm">
+<BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>Twisted 15.0.0  and its
+dependencies:</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://twistedmatrix.com/trac/wiki/Downloads"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://twistedmatrix.com/trac/wiki/Downloads</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://twisted.readthedocs.org/en/latest/installation/howto/optional.html"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://twisted.readthedocs.org/en/latest/installation/howto/optional.html</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+    <FONT SIZE=2 STYLE="font-size: 11pt">Twisted 15.0.0 for Python
+2.7 (&#8203;msi | &#8203;exe) 	|V|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://twistedmatrix.com/Releases/Twisted/15.0/Twisted-15.0.0.win32-py2.7.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://twistedmatrix.com/Releases/Twisted/15.0/Twisted-15.0.0.win32-py2.7.msi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+       &#8203;<FONT SIZE=2 STYLE="font-size: 11pt">Zope.Interface
+(required)			|V|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/pypi/zope.interface/4.1.2#downloads"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/zope.interface/4.1.2#downloads</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe#md5=ab9396981638835220fc78209bd2d803"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe#md5=ab9396981638835220fc78209bd2d803</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2-py2.7-win32.egg#md5=fb87cff4eb7407af290a78ff628f7063"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2-py2.7-win32.egg#md5=fb87cff4eb7407af290a78ff628f7063</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	<B>conch - packages for working
+with conch/SSH.</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+        <FONT SIZE=2 STYLE="font-size: 11pt">gmpy 					|X|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+        <FONT SIZE=2 STYLE="font-size: 11pt">pyasn1 					|V|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+        <FONT SIZE=2 STYLE="font-size: 11pt">pycrypto 					|V|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+    &#8203;<FONT SIZE=2 STYLE="font-size: 11pt">PyCrypto 2.0.1 for
+Python 2.5 (needed for Conch)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://twistedmatrix.com/Releases/Dependencies/Win/pycrypto-2.0.1.win32-py2.5.exe"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://twistedmatrix.com/Releases/Dependencies/Win/pycrypto-2.0.1.win32-py2.5.exe</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	<B>tls - packages that are
+needed to work with TLS.</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+   <FONT SIZE=2 STYLE="font-size: 11pt">service_identity 				|V||W|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/pypi/service_identity"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/service_identity</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://service-identity.readthedocs.org/en/14.0.0/installation.html"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://service-identity.readthedocs.org/en/14.0.0/installation.html</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	<B>Additionally, the following
+PyPI modules are required for service_identity:</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+      <FONT SIZE=2 STYLE="font-size: 11pt">characteristic				|V||W|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+      <FONT SIZE=2 STYLE="font-size: 11pt">pyasn1					|V||W|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+      <FONT SIZE=2 STYLE="font-size: 11pt">pyasn1-modules				|V||W|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ &#8203;    <FONT SIZE=2 STYLE="font-size: 11pt">PyOpenSSL 					|W|</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">(needed for SSL &gt;= 0.12 (0.14
+strongly recommended)) </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">egenix-pyopenssl-0.13.7.win32-py2.7.msi</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://www.egenix.com/cryptodownload/?python=2.7+installer&amp;file=egenix-pyopenssl-0.13.7.win32-py2.7.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://www.egenix.com/cryptodownload/?python=2.7+installer&amp;file=egenix-pyopenssl-0.13.7.win32-py2.7.msi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>allmydata-tahoe-1.10.0 and
+its dependencies:</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/README.html"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><I><U><B>https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/README.html</B></U></I></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>Packages for Python 2.7
+that have compiled C/C++ code:</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">Twisted, zope.interface,
+pycrypto, pycryptopp, zfec  	 </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>Packages that are
+platform-independent or source-only:</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt">Nevow,  argparse, 
+characteristic,  cryptography,  enum34,  foolscap,  mock,  pyasn1, 
+pyasn1-modules,  pycparser,  pyutil,  service_identity,  simplejson, 
+six,  txAWS,  zbase32</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">and for windows only	win32api</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<BR><BR>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>we try to install Twisted
+15 and its dependencies following advise:</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; line-height: 0.18cm">
+<FONT SIZE=2 STYLE="font-size: 11pt">XVIII. cut all down: </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Uninstall:
+	Twisted-15.0.0.win32-py2.7.msi </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Uninstall:	python-2.7.9.msi </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Delete: 		C:\lafs</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	Delete:		C:\python27</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XIX. new from scratch: I.+ III.
+(install lafs + python27)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XX. Install: 	service_identity</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/pypi/service_identity"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/service_identity</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://service-identity.readthedocs.org/en/14.0.0/installation.html"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://service-identity.readthedocs.org/en/14.0.0/installation.html</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	copy:
+service_identity-14.0.0-py2.py3-none-any.whl to c:\lafs</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	(Start/Program files/command
+prompt &gt; cd c:\lafs)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	 Run:	C:\lafs&gt;pip install 
+service_identity-14.0.0-py2.py3-none-any.whl</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt"><B>my 8.Result: error:
+Microsoft Visual C++ 9.0 is required (Unable to find vcvarsall.bat).
+Get it from </B></FONT><A CLASS="western" HREF="http://aka.ms/vcpython27"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U><B>http://aka.ms/vcpython27</B></U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">Reason: &quot;Downloading/unpacking
+cffi&gt;=0.8 (from<B>
+cryptography</B>&gt;=0.2.1-&gt;pyopenssl&gt;=0.12-&gt;service-identity==14.0.0)&quot;</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XXI. Install:	cryptography</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/pypi/cryptography/0.7.2"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/cryptography/0.7.2</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.7.2-cp27-none-win32.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.7.2-cp27-none-win32.whl</U></SPAN></FONT></FONT></A>			</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt">	Run:	C:\lafs&gt;pip install 
+cryptography-0.7.2-cp27-none-win32.whl</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt"><B>my 9.Result: error:
+Microsoft Visual C++ 9.0 is required (Unable to find vcvarsall.bat).
+Get it from </B></FONT><A CLASS="western" HREF="http://aka.ms/vcpython27"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U><B>http://aka.ms/vcpython27</B></U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt">Reason: cryptography requires 
+cffi&gt;=0.8 </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">Dependencies:</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt"><B>cffi</B>&gt;=0.8 is required
+by  cryptography,</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt"><B>cryptography</B>  is
+required by pyopenssl,</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt"><B>pyopenssl</B>  is required
+by service-identity<B>,</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>service-identity </B>is
+additional required by  Twisted for </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">tls - packages that are needed 
+to work with TLS,</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT SIZE=2 STYLE="font-size: 11pt"><B>Twisted</B> is required by 
+allmydata-tahoe-lafs setup</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XXII. install: 	cffi</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/pypi/cffi/0.8.6"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/cffi/0.8.6</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/packages/cp27/c/cffi/cffi-0.8.6-cp27-none-win32.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/cp27/c/cffi/cffi-0.8.6-cp27-none-win32.whl</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">copy: 
+cffi-0.8.6-cp27-none-win32.whl to c:\lafs</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">(Start/Program files/command
+prompt &gt; cd c:\lafs)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">Run:	C:\lafs&gt;pip install
+cffi-0.8.6-cp27-none-win32.whl</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XXIII.  Install:	 
+&#8203;Zope.Interface (required for Twisted)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/pypi/zope.interface/4.1.2#downloads"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/zope.interface/4.1.2#downloads</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XXIV.  Install:	 Twisted 15.0.0
+for Python 2.7 (&#8203;msi | &#8203;exe) </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://twistedmatrix.com/Releases/Twisted/15.0/Twisted-15.0.0.win32-py2.7.msi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://twistedmatrix.com/Releases/Twisted/15.0/Twisted-15.0.0.win32-py2.7.msi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">from from 
+</FONT><A CLASS="western" HREF="https://pypi.python.org/pypi/Twisted/15.0.0"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://pypi.python.org/pypi/Twisted/15.0.0</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XXV. Run:	C:\lafs&gt;python
+setup.py build  	</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		(Start/Program files/command
+prompt &gt; cd c:\lafs)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		or like to read it all at
+:	C:\lafs\<FONT FACE="Courier New, monospace">setup_build_bin.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+ <FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">	</FONT></FONT><FONT SIZE=2 STYLE="font-size: 11pt">Run:	C:\lafs&gt;python
+setup.py build </FONT><FONT FACE="Courier New, monospace"><FONT SIZE=2 STYLE="font-size: 11pt">
+&gt; setup_build_bin.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">						(go drink a cup of coffee)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>my 10<I>. Result: run throu (
+it copying many somethings to -&gt; build\lib\allmydata\...\...)</I></B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XXVI. Run: 	C:\lafs&gt;bin\tahoe
+--version</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my 11.Result: </B></I></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>:0: UserWarning: You do
+not have a working installation of the service_identity module: 'No
+module named service_identity'.  Please install it from
+&lt;</B></I></FONT><A CLASS="western" HREF="https://pypi.python.org/pypi/service_identity"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><I><U><B>https://pypi.python.org/pypi/service_identity</B></U></I></SPAN></FONT></FONT></A>&gt;
+and make sure all of its dependencies are satisfied.  Without the
+service_identity module and a recent enough pyOpenSSL to support it,
+Twisted can perform only rudimentary TLS client hostname
+verification.  Many valid certificate/hostname mappings may be
+rejected.</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>allmydata-tahoe: 1.10.0
+[NL]foolscap: 0.7.0 [NL]pycryptopp:
+0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec:
+1.4.22 [NL]Twisted: 15.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface:
+unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1
+[NL]pyOpenSSL: 0.13.1 [NL]simplejson: 3.6.5 [NL]pycrypto: 2.4.1
+[NL]pyasn1: 0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW
+LINE</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">XXVII. Run: 	C:\lafs&gt;<FONT FACE="Courier New, monospace">python
+setup.py trial (self-tests)</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	if
+like to read all at </FONT>C:\lafs\<FONT FACE="Courier New, monospace">trial_test_result.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Courier New, monospace">	Run:</FONT>C:\lafs&gt;<FONT FACE="Courier New, monospace">python
+setup.py trial &gt; trial_test_result.txt</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>my 12. Result: FAILED
+(skips=7, errors=19, successes=262)</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>[we updated twisted but still
+19 errors with twisted ]</I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>[i read anywhere at
+</I>C:\lafs\<FONT FACE="Courier New, monospace">trial_test_result.txt
+there is a problem with a temp directory, and got the idea there must
+be a problem with the right to write to the temp directory]</FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><U><B><I>Rightsmanagemant for
+C:\ lafs</I>=everybody everything</B></U></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">start/computer/&quot;C:\&quot;/Mouse
+right klick at /&quot;C:lafs&quot;/properties/security</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">/edit/add/advanced/look for
+(users)/(select)/everybody (all)/ok/ok/select user name /everybody
+(all)/|V|(check)/<B>allow</B>/all/and/allow/alter/OK</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">maybe also</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">start/computer/&quot;C:\&quot;/Mouse
+right klick at /&quot;C:\lafs&quot;/properties/security</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">/advanced/<B>owner</B>/edit/more
+users and groups/advanced/look for (users)/(select)/everybody
+(all)/OK/OK/OK</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">if there is no security tab
+maybe you are working on <B>xp home edition</B>. </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">you have to restart your
+computer at<B> secured mode </B></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">and see if it is possible to
+alter the <B>owner</B>ship of </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">&quot;c:/lafs&quot; or/and the
+<B>allow</B>ances there.</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>[we need a other version
+?what requires twisted&gt;=13.0 ?]</I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="https://tahoe-lafs.org/trac/tahoe-lafs/ticket/2249"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><I><U><B>https://tahoe-lafs.org/trac/tahoe-lafs/ticket/2249</B></U></I></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">nevow-0.11.1-py2.7.egg:</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">C:\lafs\support\lib\site-packages\nevow-0.11.1-py2.7.egg\EGG-INFO\requires.txt:</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">&quot;twisted&gt;=13.0&quot;</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>[i read also at</I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://comments.gmane.org/gmane.comp.file-systems.tahoe.devel/8336"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><I><U><B>http://comments.gmane.org/gmane.comp.file-systems.tahoe.devel/8336</B></U></I></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>we need pywin32]</I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>-&gt;--------------------<FONT COLOR="#0000ff"><U>8336</U></FONT>--------------------</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">First install<B> Twisted 14.0 </B></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">from
+&lt;</FONT><A CLASS="western" HREF="https://twistedmatrix.com/trac/wiki/Downloads#Windows"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>https://twistedmatrix.com/trac/wiki/Downloads#Windows</U></SPAN></FONT></FONT></A>&gt;.</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">(Make sure to get the 64-bit
+version in your case. It shouldn't matter whether you</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">use the msi or exe installer.)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">Then install<B> pywin32 </B></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">from&lt;
+</FONT><A CLASS="western" HREF="http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/</U></SPAN></FONT></FONT></A>
+&gt;.</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">You need
+pywin32-219.win-amd64-py2.7.exe for 64-bit Windows.</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">Then try the build again.</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">-----------------------------------------------&lt;--</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">[for short i tried it again]</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I><B>pre install:</B></I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>python27</I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><I>tahoe 1.10.0</I></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">Twisted 14.0 </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">pywin32 </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>FAILED (skips=14,
+expectedFailures=3, failures=3, errors=10, successes=1114)</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">some failures related to
+service_identity</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">[and again]</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>post install: </B></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">pip install cffi</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">pip install service_identity</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">test don't get ready after
+installing service_identity</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">[and again]</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>try post install: </B></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">pip install
+cffi-0.8.6-cp27-none-win32.whl</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">pip install
+service_identity-14.0.0-py2.py3-none-any.whl</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">test don't get ready after
+installing service_identity</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">[and again]</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>pre install von:</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">pip install
+cffi-0.8.6-cp27-none-win32.whl</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">pip install
+service_identity-14.0.0-py2.py3-none-any.whl</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">-&gt; script likes to install
+cffi-0.9.1 -&gt; no compiler error</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">[and again]</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>try post install: </B></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://www.lfd.uci.edu/~gohlke/pythonlibs/#cffi"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://www.lfd.uci.edu/~gohlke/pythonlibs/#cffi</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<A CLASS="western" HREF="http://www.lfd.uci.edu/~gohlke/pythonlibs/z94jfosk/cffi-0.9.1-cp27-none-win32.whl"><FONT COLOR="#0000ff"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN LANG="en-US"><U>http://www.lfd.uci.edu/~gohlke/pythonlibs/z94jfosk/cffi-0.9.1-cp27-none-win32.whl</U></SPAN></FONT></FONT></A></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">pip install
+cffi-0.9.1-cp27-none-win32.whl</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">-&gt; script anyway likes to
+install cffi-0.9.1 -&gt; no compiler error</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">[No way without compiler? at
+this point i nearly give up, </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">but remembered Twisted 13 run
+true, with no warnings about  service_identity.</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">I  tried A. - i. see above and
+made it ]</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>and we know now any shell
+from an administrator account is not an administrator shell</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>this step is not necessary if
+you run as administrator:</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt"><B>B:</B> allowances for
+&quot;C:\lafs&quot; :</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	<U><B>As admin </B></U><U>selekt
+user &quot;everybody&quot;  allow everything (all) for user
+&quot;everybody&quot;(all users)</U></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		start/computer/&quot;C:\&quot;/Mouse
+right click at /&quot;C:\lafs&quot;/properties/security</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		/edit/add/advanced/look for
+(users)/(select)/everybody (all)/OK/OK/</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">		select user name /everybody
+(all)/|V|(check)/<B>allow</B>/all/and/allow/alter/OK</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">	(this is a translation of the
+&quot;path&quot;, look out for similar expressions if necessary)</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0cm; border-top: none; border-bottom: 1px solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm">
+ <B><FONT SIZE=2 STYLE="font-size: 11pt">it helps partly to shrink
+the failures to only one but still a fail </FONT></B>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">__________________________________________________________________________</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">If you are attracted by errors,
+failures and user warnings on this Site, </FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; border-top: none; border-bottom: 1.00pt solid #000000; border-left: none; border-right: none; padding-top: 0cm; padding-bottom: 0.07cm; padding-left: 0cm; padding-right: 0cm; line-height: 115%">
+<FONT SIZE=2 STYLE="font-size: 11pt">but only like to install
+<FONT COLOR="#000000">allmydata-tahoe-1.10.0 then </FONT>start with 0
+(zero):</FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT FACE="Times New Roman, serif"><B>Conclusion:</B></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT FACE="Times New Roman, serif"><B>On windows you can not only
+follow the <FONT SIZE=2 STYLE="font-size: 11pt">quickstart.rst </FONT></B></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>On
+windows you need pre-installation of: Twisted and  pywin32</B></FONT></FONT></P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>On
+windows you need to run the scripts as Administrator, </B></FONT></FONT>
+</P>
+<P LANG="en-US" CLASS="western" STYLE="margin-bottom: 0.35cm; line-height: 115%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><B>not
+only in an account with admin user rights.</B></FONT></FONT></P>
+</BODY>
+</HTML>
