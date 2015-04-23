@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.0.1  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="WinLAFS Tahoe-LAFS">
+	<META NAME="CHANGED" CONTENT="20150423;11562367">
+	<META NAME="CHANGEDBY" CONTENT="WinLAFS Tahoe-LAFS">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin: 2cm }
+		P { margin-bottom: 0.21cm }
+		H1 { margin-bottom: 0.21cm }
+		H1.western { font-family: "Arial", sans-serif; font-size: 16pt }
+		H1.cjk { font-family: "Microsoft YaHei"; font-size: 16pt }
+		H1.ctl { font-family: "Mangal"; font-size: 16pt }
+		PRE.cjk { font-family: "NSimSun", monospace }
+		H2 { margin-bottom: 0.21cm }
+		H2.western { font-family: "Arial", sans-serif; font-size: 14pt; font-style: italic }
+		H2.cjk { font-family: "Microsoft YaHei"; font-size: 14pt; font-style: italic }
+		H2.ctl { font-family: "Mangal"; font-size: 14pt; font-style: italic }
+		H3 { margin-bottom: 0.21cm }
+		H3.western { font-family: "Arial", sans-serif }
+		H3.cjk { font-family: "Microsoft YaHei" }
+		H3.ctl { font-family: "Mangal" }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<H1 CLASS="western"><FONT FACE="Arial, sans-serif">Building Python
+EGGs on Windows 7 bit 64</FONT></H1>
+<P><BR><BR>
+</P>
+<PRE CLASS="western"><FONT FACE="Arial, sans-serif">based on this two pages i was able to build an egg for an easier Installation of tahoe-lafs on windows</FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><A HREF="https://github.com/tahoe-lafs/tahoe-lafs/blob/195.windows-packaging.7/docs/build/windows-installer.rst">https://github.com/tahoe-lafs/tahoe-lafs/blob/195.windows-packaging.7/docs/build/windows-installer.rst</A></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><A HREF="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows">https://github.com/cython/cython/wiki/CythonExtensionsOnWindows</A></SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">i tried it very close to the first (windows-installer.rst) 99% and </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">with a little help from the second (CythonExtensionsOnWindows) 1% and it works.</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">tahoe-lafs need pyOpenSSl 0.13.0 or pyOpenSSl 0.13.1 because, </SPAN></FONT>
+ <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">pyOpenSSl 0.14 and higher need additional dependencies which lead to the no compiler error:</SPAN></FONT>
+ <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">(error: Unable to find vcvarsall.bat) during installation.</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">Although installing with an existing pyOpenSSl 0.13.1 works on win7bit32, </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">the containing OpenSSl version is to old and could be vulnerable.</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">This is about how to update pyOpenSSl 0.13.1 with an more actual OpenSSL version (1.0.2a).</SPAN></FONT></PRE><H2 CLASS="western">
+<FONT FACE="Arial, sans-serif">Preinstallation</FONT></H2>
+<H3 CLASS="western"><FONT FACE="Arial, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt">A.
+Download and install: Python 2.7.9 for 64bit Windows</FONT></FONT></H3>
+<PRE CLASS="western"><FONT FACE="Arial, sans-serif">A.1. Install :                               python-2.7.9.amd64.msi </FONT>
+                       <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">at c:\python27 ( check: set Add pyton.exe to Path</SPAN></FONT>
+                       <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">and advanced-&gt; check: compile  .py files to byte code after installation)</SPAN></FONT>
+                       <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">from https://www.python.org/downloads/release/python-279/</SPAN></FONT>
+                       <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64.msi</SPAN></FONT></PRE><H3 CLASS="western">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt">B.
+Download and install: Microsoft Visual C++ Compiler for Python 2.7 </FONT></FONT>
+</H3>
+<PRE CLASS="western" STYLE="margin-bottom: 0.5cm">                       <A HREF="http://www.microsoft.com/en-us/download/details.aspx?id=44266"><FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">http://www.microsoft.com/en-us/download/details.aspx?id=44266</SPAN></FONT></A>
+                                                  <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">(http://download.microsoft.com/download/7/9/6/796EF2E4-801B-4FC4-AB28-B59FBF6D907B/VCForPython27.msi)                                                  </SPAN></FONT></PRE><H3 CLASS="western">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt">C.
+Download and install: ActiveState Perl</FONT></FONT></H3>
+<PRE CLASS="western">                       <A HREF="https://www.activestate.com/activeperl/downloads"><FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">https://www.activestate.com/activeperl/downloads</SPAN></FONT></A>
+                                                <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">(<A HREF="https://downloads.activestate.com/ActivePerl/releases/5.20.2.2001/ActivePerl-5.20.2.2001-MSWin32-x64-298913.msi">https://downloads.activestate.com/ActivePerl/releases/5.20.2.2001/ActivePerl-5.20.2.2001-MSWin32-x64-298913.msi</A>)</SPAN></FONT>
+                                                 <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">[ ActivePerl-5.20.2.2001-MSWin32-x64-298913.msi this file is also the de- installer keep it for clean up]</SPAN></FONT></PRE><H2 CLASS="western">
+<FONT FACE="Arial, sans-serif">OpenSSl Installation</FONT></H2>
+<H3 CLASS="western"><FONT FACE="Arial, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt">D.
+Download and install: The latest OpenSSL version</FONT></FONT></H3>
+<P><BR><BR>
+</P>
+<PRE CLASS="western">                               <A HREF="https://www.openssl.org/source/"><FONT FACE="Arial, sans-serif">https://www.openssl.org/source/</FONT></A>
+                               <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><A HREF="https://www.openssl.org/source/openssl-1.0.2a.tar.gz">https://www.openssl.org/source/openssl-1.0.2a.tar.gz</A> [actual at 2015-3-19]</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.1. Untar it using 7zip:      Download 7-Zip 9.20 (2010-11-18) for Windows:</SPAN></FONT>
+                               <A HREF="http://7-zip.org/"><FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">http://7-zip.org/</SPAN></FONT></A>
+                               <A HREF="http://7-zip.org/a/7z920-x64.msi"><FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">http://7-zip.org/a/7z920-x64.msi</SPAN></FONT></A>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.2. Example path unpacked:    C:\Users\YourUserName\Downloads\openssl-1.0.2a.tar\openssl-1.0.2a\openssl-1.0.2a</SPAN></FONT>
+
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.3. open file install.w64 With WordPad:        </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">---------install.w64----------------</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">To build for Win64/x64:          </SPAN></FONT>
+                                                                    
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">&gt; perl Configure VC-WIN64A </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">&gt; ms\do_win64a                     </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">&gt; nmake -f ms\ntdll.mak         </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">&gt; cd out32dll                           </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">&gt; ..\ms\test                              </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">----------------------------------------</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.4. Open Administrator shell:  </SPAN></FONT>
+                              <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">(Start menu/All Programs/Command Prompt/right click/Run as administrator /yes)</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.5. Go to the untar'ed openssl source base directory:  </SPAN></FONT>
+        <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">Example      RUN &gt; </SPAN></FONT><FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><B>cd &quot;C:\Users\YourUserName\Downloads\openssl-1.0.2a.tar\openssl-1.0.2a\openssl-1.0.2a&quot;</B></SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.6.                              RUN &gt;    <B>&quot;C:\Users\YourUserName\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\vcvarsall.bat&quot; amd64 </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.7.                              RUN &gt; <B>mkdir c:\dist </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.8.                              RUN &gt; <B>perl Configure VC-WIN64A --prefix=c:\dist\openssl64 no-asm enable-tlsext </B>       </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.9.                              RUN &gt; <B>ms\do_win64a </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.10.                            RUN &gt; <B>nmake -f ms\ntdll.mak </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.11. Run the Test      RUN &gt; <B>cd out32dll </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.12. Run the Test      RUN &gt; <B>..\ms\test </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.13. Back                   RUN &gt; <B>cd .. </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">D.14. Install                 RUN &gt; <B>nmake -f ms\ntdll.mak install </B></SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">[If this fails for you; you can try to install a ready compiled package:</SPAN></FONT>
+                                                <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><A HREF="http://slproweb.com/download/Win64OpenSSL-1_0_2a.exe">http://slproweb.com/download/Win64OpenSSL-1_0_2a.exe</A> ] </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">but you will have a different path !</SPAN></FONT></PRE><H2 CLASS="western">
+<FONT FACE="Arial, sans-serif">PyOpenSSL Installation</FONT></H2>
+<H3 CLASS="western"><FONT FACE="Arial, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt">E.
+Download and install: pyOpenSSL 0.13.1 </FONT></FONT>
+</H3>
+<PRE CLASS="western"><FONT FACE="Arial, sans-serif">E.1.          <A HREF="https://pypi.python.org/pypi/pyOpenSSL/0.13.1">https://pypi.python.org/pypi/pyOpenSSL/0.13.1</A></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><A HREF="https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-0.13.1.tar.gz">https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-0.13.1.tar.gz </A></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.2. Untar it using 7zip:       </SPAN></FONT>
+                           <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">7-Zip 9.20 for Windows</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.2. Example path unpacked:     </SPAN></FONT>
+             <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">C:\Users\YourUserName\Downloads\pyOpenSSL-0.13.1.tar\dist\pyOpenSSL-0.13.1\pyOpenSSL-0.13.1</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.3. Open Administrator shell:  </SPAN></FONT>
+              <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">(Start menu/All Programs/Command Prompt/right click/Run as administrator /yes)</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.4.    Go to the untar'ed pyOpenSSL base directory:    </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">Example              RUN &gt; <B>cd &quot;C:\Users\YourUserName\Downloads\pyOpenSSL-0.13.1.tar\dist\pyOpenSSL-0.13.1\pyOpenSSL-0.13.1&quot;</B></SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.5.                     RUN &gt; <B>&quot;C:\Users\YourUserName\AppData\Local\Programs\Common\Microsoft\Visual C++ for Python\9.0\vcvarsall.bat&quot; amd64 </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.6.                     RUN &gt; <B>set PYCA_WINDOWS_LINK_TYPE=dynamic </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.7.                     RUN &gt; <B>set LIB=c:\dist\openssl64\lib;%LIB% </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.8.                     RUN &gt; <B>set INCLUDE=c:\dist\openssl64\include;%INCLUDE% </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.9.                     RUN &gt; <B>set PATH=c:\dist\openssl64\bin;%PATH% </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.10.                   RUN &gt; <B>SET DISTUTILS_USE_SDK=1 </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.11.                   RUN &gt; <B>SET MSSdk=1 </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.12.                   RUN &gt; <B>python setup.py build </B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">E.13.                   RUN &gt; <B>python setup.py install </B></SPAN></FONT></PRE><H2 CLASS="western">
+<FONT FACE="Arial, sans-serif">Building an EGG from Installed
+pyOpenSSL</FONT></H2>
+<H3 CLASS="western"><FONT FACE="Arial, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt">F.
+Edit setup.py at the Base directory of pyOpenSSL</FONT></FONT></H3>
+<PRE CLASS="western"><FONT FACE="Arial, sans-serif">F.1. Right click at  setup.py using &quot;edit with IDLE&quot; </FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">Example Path &quot;C:\Users\YourUserName\Downloads\pyOpenSSL-0.13.1.tar\dist\pyOpenSSL-0.13.1\pyOpenSSL-0.13.1\setup.py&quot;</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">F.2.  look out for the first lines code for example this:</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">---------------------setup.py--------------------------</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">import sys, os</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><B>from distutils.core import Extension, setup</B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">from distutils.errors import DistutilsFileError</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">from distutils.command.build_ext import build_ext</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">....</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">....</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">-------------------------------------------------------</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">F.3.     change only one word &quot;<B>distutils.core</B>&quot; to &quot;<B>setuptools</B>&quot;, </SPAN></FONT>
+         <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">in the line with setup  </SPAN></FONT>
+         <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">get &quot;</SPAN></FONT><FONT FACE="Arial, sans-serif"><SPAN LANG="en-US"><B>from setuptools import Extension, setup</B></SPAN></FONT><FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">&quot;</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">F. 4.    save to file</SPAN></FONT></PRE><H3 CLASS="western">
+<FONT FACE="Arial, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt">G.
+Build the EGG</FONT></FONT></H3>
+<PRE CLASS="western"><FONT FACE="Arial, sans-serif">G.1. Open Administrator shell:  </FONT>
+                              <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">( Start menu / All Programs / Command Prompt / right click / Run as administrator / yes )</SPAN></FONT>
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">G.2.    Go to the untar'ed pyOpenSSL base directory:    </SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">Example            RUN &gt; <B>cd &quot;C:\Users\YourUserName\Downloads\pyOpenSSL-0.13.1.tar\dist\pyOpenSSL-0.13.1\pyOpenSSL-0.13.1&quot;</B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">G.3.                    RUN &gt; <B>python setup.py bdist_egg</B></SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">G.4. find an egg at</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">Example Path &quot;C:\Users\YourUserName\Downloads\pyOpenSSL-0.13.1.tar\dist\pyOpenSSL-0.13.1\pyOpenSSL-0.13.1\dist\pyOpenSSL-0.13.1-py2.7-win-amd64.egg&quot;</SPAN></FONT>
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">named         pyOpenSSL-0.13.1-py2.7-win-amd64.egg</SPAN></FONT>
+
+
+<FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">note: different version, different paths, need different commands</SPAN></FONT>
+      <FONT FACE="Arial, sans-serif"><SPAN LANG="en-US">this version was actual at 2015-04-23 and will not be updated</SPAN></FONT></PRE>
+</BODY>
+</HTML>
