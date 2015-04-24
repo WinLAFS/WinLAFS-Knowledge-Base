@@ -1,0 +1,307 @@
+{\rtf1\ansi\ansicpg1252\deff0\deftab709{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\nowidctlpar\lang1033\kerning1\f0\fs24\par
+\b\fs28 WinLAFS:\b0\fs24\par
+\pard\nowidctlpar\sa200\sl276\slmult1\b\fs28 How to install AllMyData_Tahoe_Lafs 1.10.0 on Windows 7 bit 32\b0\fs24\par
+\fs20 [if you like to install tahoe-lafs at win7bit64 look out for \fs24\par
+\fs20 WinLAFS: How to install AllMyData_Tahoe_Lafs 1.10.0 on Windows 7 bit 64 ]\fs24\par
+\fs22 __________________________________________________________________________\fs24\par
+\fs22 If you are attracted by errors, failures and user warnings on this Site, \fs24\par
+\fs22 but only like to install \cf1 allmydata-tahoe-1.10.0 then \cf0 start with 0 (zero):\fs24\par
+\fs22 ___________________________________________________________________________\fs24\par
+\fs22 0: Successful install may fail if you used already python:\fs24\par
+\fs22 0a: uninstall all installed dependencies related to python\fs24\par
+\fs22 0b: uninstall python \fs24\par
+\fs22 0c: delete the python directory\fs24\par
+\fs22 0d: delete the AllMyData_Tahoe_Lafs directory\fs24\par
+\fs22 0e: start from scratch at A.\fs24\par
+\fs22 ____________________________________________\fs24\par
+\b\fs22 installing tahoe-lafs on 7win32 with twisted 13\b0\fs24\par
+\fs22 ____________________________________________\fs24\par
+\pard\nowidctlpar\sa200\sl100\slmult0\fs22 A. Install:\tab  allmydata-tahoe-1.10.0 at c:\\lafs (unzip and rename to "lafs" only)\fs24\par
+\pard\nowidctlpar\sa200\sl276\slmult1\fs22\tab from {\field{\*\fldinst{HYPERLINK "https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip"}}{\fldrslt{\ul\cf2 https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip}}}\f0\fs24\par
+\fs22 B. We don't follow: \tab C:\\lafs\\docs\\quickstart.rst (open with word pad)\fs24\par
+\fs22 C. Install :\tab  python-2.7.9.msi at c:\\python27 ( check: set Add pyton.exe to Path and\fs24\par
+\fs22  \tab\tab\tab advanced-> check: compile  .py files to byte code after installation)\fs24\par
+\fs22\tab from {\field{\*\fldinst{HYPERLINK "https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi"}}{\fldrslt{\ul\cf2 https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi}}}\f0\fs24\par
+\par
+\fs22 D. Install:\tab Twisted-13.0.0.win32-py2.7.msi \fs24\par
+\fs22\tab from {\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/Twisted/13.0.0"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/Twisted/13.0.0}}}\f0\fs24\par
+\fs22\tab{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/2.7/T/Twisted/Twisted-13.0.0.win32-py2.7.msi"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/2.7/T/Twisted/Twisted-13.0.0.win32-py2.7.msi}}}\f0\fs24\par
+\par
+\fs22 E. Install:\tab\tab\cf1 pywin32-217.win32-py2.7.exe\cf0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/"}}{\fldrslt{\ul\cf2 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/pywin32-217.win32-py2.7.exe/download"}}{\fldrslt{\ul\cf2 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20217/pywin32-217.win32-py2.7.exe/download}}}\f0\fs24\par
+\fs22 F. \ul\b Run as administrator \ulnone\b0 :\tab C:\\lafs>\b python setup.py build\b0\fs24\par
+\fs22 (Start menu/All Programs/ Accessories /Command Prompt/right click/\b Run as administrator \b0 /jes> cd c:\\lafs)\fs24\par
+\fs22\tab\tab\b or\b0  like to read it all at :\tab C:\\lafs\\setup_build_bin.txt\fs24\par
+\fs22  \tab Run:\tab C:\\lafs>\b python setup.py build  > setup_build_bin.txt\b0\fs24\par
+\fs22\tab\tab\tab\tab\tab\tab (go drink a cup of coffee 3min)\fs24\par
+\b\i\fs22 1. Result: run true ( it copying many somethings to -> build\\lib\\allmydata\\...\\...)\b0\i0\fs24\par
+\fs22 G.\b Run as administrator \b0 : \tab C:\\lafs>\b bin\\tahoe --version\b0\fs24\par
+\b\i\fs22 2.Result: \b0\i0\fs24\par
+\b\i\fs22 allmydata-tahoe: 1.10.0 [NL]foolscap: 0.7.0 [NL]pycryptopp: 0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec: 1.4.22 [NL]Twisted: 13.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface: unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1 [NL]pyOpenSSL: 0.13.1 [NL]simplejson: 3.6.5 [NL]pycrypto: 2.4.1 [NL]pyasn1: 0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW LINE\b0\i0\fs24\par
+\fs22 H. Check: Test Grid is online\fs24\par
+\fs22\tab Tahoe Test Grid Status at {\field{\*\fldinst{HYPERLINK "http://stats.pingdom.com/cvvac5t8l4fv/1300061"}}{\fldrslt{\ul\cf2 http://stats.pingdom.com/cvvac5t8l4fv/1300061}}}\f0\fs24\par
+\fs22 i.\ul\b  Run as administrator \ulnone\b0 : \tab C:\\lafs>\b python setup.py trial \b0 (self-tests)\fs24\par
+\fs22\tab if like to read all at C:\\lafs\\trial_test_result.txt\fs24\par
+\fs22\tab Run:C:\\lafs>\b python setup.py trial > trial_test_result.txt\b0\fs24\par
+\fs22\tab\tab\tab\tab\tab\tab\tab (go drink a cup of coffee 21min)\fs24\par
+\pard\nowidctlpar\b\i\fs22 3. Result: PASSED (skips=14, expectedFailures=3, successes=1117)\b0\i0\fs24\par
+\fs22\tab\fs24\par
+\fs22\tab This indicates you installed tahoe-lafs successful.\fs24\par
+\fs22\tab ==================================================\fs24\par
+\par
+\par
+\par
+\fs22\tab if you get a failed:\fs24\par
+\fs22\tab check F.-i. if you don't \ul\b Run as administrator\ulnone\b0  ,  you may get:\fs24\par
+\fs22\tab\tab\tab\tab\tab\tab FAILED (skips=7, errors=19, successes=262 ) \fs24\par
+\fs22\tab check 2.Result: something different?\fs24\par
+\fs22\tab\tab\tab maybe you use already Python with more actual dependencies\fs24\par
+\fs22\tab\tab\tab start again with 0 (zero):\fs24\par
+\fs22\tab\tab\tab try uninstalling python, uninstalling python related dependencies , \tab\tab\tab deleting its directory and deleting the tahoe_lafs directory;\fs24\par
+\pard\nowidctlpar\sa200\sl276\slmult1\fs22 __________________________________________________________________________\fs24\par
+\fs22 If you are attracted by errors, failures and user warnings on this Site, \fs24\par
+\fs22 but only like to install \cf1 allmydata-tahoe-1.10.0 then \cf0 start with 0 (zero):\fs24\par
+\fs22 ___________________________________________________________________________\fs24\par
+\fs22 This following is about what happens if you follow the Install  Advise at\fs24\par
+\fs22 C:\\lafs\\docs\\quickstart.rst (open with wordpad)\fs24\par
+\fs22 and this is the wrong , long, hard way along errors,failures and warnings.\fs24\par
+\fs22 ____________________________________________________________________________\fs24\par
+\b\fs22 Some Tahoe_Lafs Installation Problems on windows 7 bit 32\b0\fs24\par
+\pard\nowidctlpar\sa200\sl100\slmult0\fs22 I. Install:\tab  allmydata-tahoe-1.10.0 at c:\\lafs (unzip and rename to " lafs" only)\fs24\par
+\pard\nowidctlpar\sa200\sl276\slmult1\fs22\tab from {\field{\*\fldinst{HYPERLINK "https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip"}}{\fldrslt{\ul\cf2 https://tahoe-lafs.org/source/tahoe-lafs/releases/allmydata-tahoe-1.10.0.zip}}}\f0\fs24\par
+\fs22 II. follow: \tab C:\\lafs\\docs\\quickstart.rst (open with word pad)\fs24\par
+\fs22 III. Install :\tab  python-2.7.9.msi at c:\\python27 ( check: set Add pyton.exe to Path and\fs24\par
+\fs22  \tab\tab\tab advanced-> check: compile  .py files to byte code after installation)\fs24\par
+\fs22\tab from {\field{\*\fldinst{HYPERLINK "https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi"}}{\fldrslt{\ul\cf2 https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi}}}\f0\fs24\par
+\fs22 IV. Run:\tab C:\\lafs>python setup.py build  \tab\fs24\par
+\fs22\tab\tab (Start/Program files/command prompt > cd c:\\lafs)\fs24\par
+\fs22\tab\tab or like to read it all at :\tab C:\\lafs\\setup_build_bin.txt\fs24\par
+\fs22  \tab Run:\tab C:\\lafs>python setup.py build  > setup_build_bin.txt\fs24\par
+\fs22\tab\tab\tab\tab\tab\tab (go drink a cup of coffee)\fs24\par
+\b\i\fs22 my 1.Result: \b0\i0\fs24\par
+\b\i\fs22 error: Installed distribution twisted 12.1.0 conflicts with requirement twisted>=13.0\b0\i0\fs24\par
+\fs22 V. Install:\tab Twisted-13.0.0.win32-py2.7.msi \fs24\par
+\fs22\tab from {\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/Twisted/13.0.0"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/Twisted/13.0.0}}}\f0\fs24\par
+{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/2.7/T/Twisted/Twisted-13.0.0.win32-py2.7.msi"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/2.7/T/Twisted/Twisted-13.0.0.win32-py2.7.msi}}}\f0\fs24\par
+\fs22 VI. Delete: C:\\lafs\fs24\par
+\fs22 VII. Try again I.+IV. (install lafs + run lafs setup build bin)\fs24\par
+\b\i\fs22 my 2. Result: run true ( it copying many somethings to -> build\\lib\\allmydata\\...\\...)\b0\i0\fs24\par
+\fs22 VIII. Run: \tab C:\\lafs>bin\\tahoe --version\fs24\par
+\b\i\fs22 my 3.Result: \b0\i0\fs24\par
+\b\i\fs22 allmydata-tahoe: 1.10.0 [NL]foolscap: 0.7.0 [NL]pycryptopp: 0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec: 1.4.22 [NL]Twisted: 13.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface: unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1 [NL]pyOpenSSL: 0.13.1 [NL]simplejson: 3.6.5 [NL]pycrypto: 2.4.1 [NL]pyasn1: 0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW LINE\b0\i0\fs24\par
+\fs22 IX. Run: \tab C:\\lafs>python setup.py trial (self-tests)\fs24\par
+\fs22\tab if like to read all at C:\\lafs\\trial_test_result.txt\fs24\par
+\fs22\tab Run:C:\\lafs>python setup.py trial > trial_test_result.txt\fs24\par
+\b\i\fs22 my 4. Result: FAILED (skips=7, errors=19, successes=262 ) \b0\i0\fs24\par
+\i\fs22 [at this point i could be nearly ready, but i don't know what was wrong \i0\fs24\par
+\i\fs22 and made the wrong conclusions:]\i0\fs24\par
+\i\fs22 [So many errors maybe the  Tahoe Test Grid isn't online]\i0\fs24\par
+\fs22 X. Check: Tahoe Test Grid Status at {\field{\*\fldinst{HYPERLINK "http://stats.pingdom.com/cvvac5t8l4fv/1300061"}}{\fldrslt{\ul\cf2 http://stats.pingdom.com/cvvac5t8l4fv/1300061}}}\f0\fs24\par
+\i\fs22 [reading C:\\lafs\\trial_test_result.txt so many errors related with Twisted, maybe we need a newer version we will take Twisted 15 we find here {\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/Twisted"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/Twisted}}}\i0\f0\fs24  ]\par
+\pard\nowidctlpar\sl100\slmult0\fs22 XI. cut all down: \fs24\par
+\pard\nowidctlpar\sa200\sl276\slmult1\fs22\tab Uninstall: \tab Twisted-13.0.0.win32-py2.7.msi \fs24\par
+\fs22\tab Uninstall:\tab python-2.7.9.msi \fs24\par
+\fs22\tab Delete: \tab\tab C:\\tahoe\fs24\par
+\fs22\tab Delete:\tab\tab C:\\python27\fs24\par
+\fs22 XII. new from scratch: I.+ III.  (install lafs + python27)\fs24\par
+\fs22 XIII.  Install:\tab Twisted-15.0.0.win32-py2.7.msi \fs24\par
+\fs22\tab{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/2.7/T/Twisted/Twisted-15.0.0.win32-py2.7.msi"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/2.7/T/Twisted/Twisted-15.0.0.win32-py2.7.msi}}}\f0\fs24\par
+\fs22\tab\tab from  {\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/Twisted/15.0.0"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/Twisted/15.0.0}}}\f0\fs24\par
+\fs22 XIV.  Run:\tab C:\\lafs>python setup.py build  \tab\fs24\par
+\fs22\tab\tab (Start/Program files/command prompt > cd c:\\lafs)\fs24\par
+\fs22\tab\tab or like to read it all at :\tab C:\\lafs\\setup_build_bin.txt\fs24\par
+\fs22  \tab Run:\tab C:\\lafs>python setup.py build  > setup_build_bin.txt\fs24\par
+\fs22\tab\tab\tab\tab\tab\tab (go drink a cup of coffee)\fs24\par
+\b\fs22 my 5\i . Result: run true ( it copying many somethings to -> build\\lib\\allmydata\\...\\...)\b0\i0\fs24\par
+\fs22 XV. Run: \tab C:\\lafs>bin\\tahoe --version\fs24\par
+\b\i\fs22 my 6.Result: \b0\i0\fs24\par
+\b\i\fs22 :0: UserWarning: You do not have a working installation of the service_identity module: 'No module named service_identity'.  Please install it from <{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/service_identity"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/service_identity}}}\b0\i0\f0\fs24 > and make sure all of its dependencies are satisfied.  Without the service_identity module and a recent enough pyOpenSSL to support it, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.\par
+\b\i\fs22 allmydata-tahoe: 1.10.0 [NL]foolscap: 0.7.0 [NL]pycryptopp: 0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec: 1.4.22 [NL]Twisted: 15.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface: unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1 [NL]pyOpenSSL: 0.13.1 [NL]simplejson: 3.6.5 [NL]pycrypto: 2.4.1 [NL]pyasn1: 0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW LINE\b0\i0\fs24\par
+\fs22 XVI. Run: \tab C:\\lafs>python setup.py trial (self-tests)\fs24\par
+\fs22\tab if like to read all at C:\\lafs\\trial_test_result.txt\fs24\par
+\fs22\tab Run:C:\\lafs>python setup.py trial > trial_test_result.txt\fs24\par
+\b\i\fs22 my 7. Result: FAILED (skips=7, failures=1, errors=19, successes=261)\b0\i0\fs24\par
+\fs22 XVII. Check: Tahoe Test Grid Status at {\field{\*\fldinst{HYPERLINK "http://stats.pingdom.com/cvvac5t8l4fv/1300061"}}{\fldrslt{\ul\cf2 http://stats.pingdom.com/cvvac5t8l4fv/1300061}}}\f0\fs24\par
+\fs22 [seams we have more problems than before.]\fs24\par
+\pard\nowidctlpar\sl100\slmult0\fs22 many errors may related to Twisted\fs24\par
+\fs22 have a look at the dependencies of  Twisted15\fs24\par
+\fs22 read |V|=  is in the list of tahoe-lafs dependencies\fs24\par
+\fs22 read |X|= is not in the list of tahoe-lafs dependencies\fs24\par
+\fs22 read |W|= 6.Result:User Warning: service_identity, its dependencies and pyOpenSSL\fs24\par
+\par
+\pard\nowidctlpar\sa200\sl276\slmult1\b\i\fs22 Twisted 15.0.0  and its dependencies:\b0\i0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://twistedmatrix.com/trac/wiki/Downloads"}}{\fldrslt{\ul\cf2 http://twistedmatrix.com/trac/wiki/Downloads}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://twisted.readthedocs.org/en/latest/installation/howto/optional.html"}}{\fldrslt{\ul\cf2 http://twisted.readthedocs.org/en/latest/installation/howto/optional.html}}}\f0\fs24\par
+\fs22     Twisted 15.0.0 for Python 2.7 (\u8203?msi | \u8203?exe) \tab |V|\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://twistedmatrix.com/Releases/Twisted/15.0/Twisted-15.0.0.win32-py2.7.msi"}}{\fldrslt{\ul\cf2 http://twistedmatrix.com/Releases/Twisted/15.0/Twisted-15.0.0.win32-py2.7.msi}}}\f0\fs24\par
+\fs22        \u8203?Zope.Interface (required)\tab\tab\tab |V|\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/zope.interface/4.1.2#downloads"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/zope.interface/4.1.2#downloads}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe#md5=ab9396981638835220fc78209bd2d803"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe#md5=ab9396981638835220fc78209bd2d803}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2-py2.7-win32.egg#md5=fb87cff4eb7407af290a78ff628f7063"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2-py2.7-win32.egg#md5=fb87cff4eb7407af290a78ff628f7063}}}\f0\fs24\par
+\fs22\tab\b conch - packages for working with conch/SSH.\b0\fs24\par
+\fs22         gmpy \tab\tab\tab\tab\tab |X|\fs24\par
+\fs22         pyasn1 \tab\tab\tab\tab\tab |V|\fs24\par
+\fs22         pycrypto \tab\tab\tab\tab\tab |V|\fs24\par
+\fs22     \u8203?PyCrypto 2.0.1 for Python 2.5 (needed for Conch)\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://twistedmatrix.com/Releases/Dependencies/Win/pycrypto-2.0.1.win32-py2.5.exe"}}{\fldrslt{\ul\cf2 https://twistedmatrix.com/Releases/Dependencies/Win/pycrypto-2.0.1.win32-py2.5.exe}}}\f0\fs24\par
+\fs22\tab\b tls - packages that are needed to work with TLS.\b0\fs24\par
+\fs22    service_identity \tab\tab\tab\tab |V||W|\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/service_identity"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/service_identity}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://service-identity.readthedocs.org/en/14.0.0/installation.html"}}{\fldrslt{\ul\cf2 http://service-identity.readthedocs.org/en/14.0.0/installation.html}}}\f0\fs24\par
+\fs22\tab\b Additionally, the following PyPI modules are required for service_identity:\b0\fs24\par
+\fs22       characteristic\tab\tab\tab\tab |V||W|\fs24\par
+\fs22       pyasn1\tab\tab\tab\tab\tab |V||W|\fs24\par
+\fs22       pyasn1-modules\tab\tab\tab\tab |V||W|\fs24\par
+\fs22  \u8203?    PyOpenSSL \tab\tab\tab\tab\tab |W|\fs24\par
+\fs22 (needed for SSL >= 0.12 (0.14 strongly recommended)) \fs24\par
+\fs22 egenix-pyopenssl-0.13.7.win32-py2.7.msi\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://www.egenix.com/cryptodownload/?python=2.7+installer&file=egenix-pyopenssl-0.13.7.win32-py2.7.msi"}}{\fldrslt{\ul\cf2 https://www.egenix.com/cryptodownload/?python=2.7+installer&file=egenix-pyopenssl-0.13.7.win32-py2.7.msi}}}\f0\fs24\par
+\b\i\fs22 allmydata-tahoe-1.10.0 and its dependencies:\b0\i0\fs24\par
+\b\i\fs22{\field{\*\fldinst{HYPERLINK "https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/README.html"}}{\fldrslt{\ul\cf2 https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/README.html}}}\b0\i0\f0\fs24\par
+\b\i\fs22 Packages for Python 2.7 that have compiled C/C++ code:\b0\i0\fs24\par
+\fs22 Twisted, zope.interface, pycrypto, pycryptopp, zfec  \tab  \fs24\par
+\b\i\fs22 Packages that are platform-independent or source-only:\b0\i0\fs24\par
+\fs22  Nevow,  argparse,  characteristic,  cryptography,  enum34,  foolscap,  mock,  pyasn1,  pyasn1-modules,  pycparser,  pyutil,  service_identity,  simplejson,  six,  txAWS,  zbase32\fs24\par
+\fs22 and for windows only\tab win32api\fs24\par
+\par
+\b\i\fs22 we try to install Twisted 15 and its dependencies following advise:\b0\i0\fs24\par
+\pard\nowidctlpar\sl100\slmult0\fs22 XVIII. cut all down: \fs24\par
+\pard\nowidctlpar\sa200\sl276\slmult1\fs22\tab Uninstall: \tab Twisted-15.0.0.win32-py2.7.msi \fs24\par
+\fs22\tab Uninstall:\tab python-2.7.9.msi \fs24\par
+\fs22\tab Delete: \tab\tab C:\\lafs\fs24\par
+\fs22\tab Delete:\tab\tab C:\\python27\fs24\par
+\fs22 XIX. new from scratch: I.+ III. (install lafs + python27)\fs24\par
+\fs22 XX. Install: \tab service_identity\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/service_identity"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/service_identity}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/2.7/s/service_identity/service_identity-14.0.0-py2.py3-none-any.whl}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://service-identity.readthedocs.org/en/14.0.0/installation.html"}}{\fldrslt{\ul\cf2 http://service-identity.readthedocs.org/en/14.0.0/installation.html}}}\f0\fs24\par
+\fs22\tab copy: service_identity-14.0.0-py2.py3-none-any.whl to c:\\lafs\fs24\par
+\fs22\tab (Start/Program files/command prompt > cd c:\\lafs)\fs24\par
+\fs22\tab  Run:\tab C:\\lafs>pip install  service_identity-14.0.0-py2.py3-none-any.whl\fs24\par
+\fs22  \b my 8.Result: error: Microsoft Visual C++ 9.0 is required (Unable to find vcvarsall.bat). Get it from {\field{\*\fldinst{HYPERLINK "http://aka.ms/vcpython27"}}{\fldrslt{\ul\cf2 http://aka.ms/vcpython27}}}\b0\f0\fs24\par
+\fs22 Reason: "Downloading/unpacking cffi>=0.8 (from\b  cryptography\b0 >=0.2.1->pyopenssl>=0.12->service-identity==14.0.0)"\fs24\par
+\fs22 XXI. Install:\tab cryptography\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/cryptography/0.7.2"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/cryptography/0.7.2}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.7.2-cp27-none-win32.whl"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.7.2-cp27-none-win32.whl}}}\f0\fs24\tab\tab\tab\par
+\fs22  \tab Run:\tab C:\\lafs>pip install  cryptography-0.7.2-cp27-none-win32.whl\fs24\par
+\fs22  \b my 9.Result: error: Microsoft Visual C++ 9.0 is required (Unable to find vcvarsall.bat). Get it from {\field{\*\fldinst{HYPERLINK "http://aka.ms/vcpython27"}}{\fldrslt{\ul\cf2 http://aka.ms/vcpython27}}}\b0\f0\fs24\par
+\fs22  Reason: cryptography requires  cffi>=0.8 \fs24\par
+\fs22 Dependencies:\fs24\par
+\fs22  \b cffi\b0 >=0.8 is required by  cryptography,\fs24\par
+\fs22  \b cryptography\b0   is required by pyopenssl,\fs24\par
+\fs22  \b pyopenssl\b0   is required by service-identity\b ,\b0\fs24\par
+\b\fs22 service-identity \b0 is additional required by  Twisted for \fs24\par
+\fs22 tls - packages that are needed  to work with TLS,\fs24\par
+\fs22  \b Twisted\b0  is required by  allmydata-tahoe-lafs setup\fs24\par
+\fs22 XXII. install: \tab cffi\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/cffi/0.8.6"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/cffi/0.8.6}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/cp27/c/cffi/cffi-0.8.6-cp27-none-win32.whl"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/cp27/c/cffi/cffi-0.8.6-cp27-none-win32.whl}}}\f0\fs24\par
+\fs22 copy:  cffi-0.8.6-cp27-none-win32.whl to c:\\lafs\fs24\par
+\fs22 (Start/Program files/command prompt > cd c:\\lafs)\fs24\par
+\fs22 Run:\tab C:\\lafs>pip install cffi-0.8.6-cp27-none-win32.whl\fs24\par
+\fs22 XXIII.  Install:\tab   \u8203?Zope.Interface (required for Twisted)\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/zope.interface/4.1.2#downloads"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/zope.interface/4.1.2#downloads}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe"}}{\fldrslt{\ul\cf2 https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe}}}\f0\fs24\par
+\fs22 XXIV.  Install:\tab  Twisted 15.0.0 for Python 2.7 (\u8203?msi | \u8203?exe) \fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://twistedmatrix.com/Releases/Twisted/15.0/Twisted-15.0.0.win32-py2.7.msi"}}{\fldrslt{\ul\cf2 http://twistedmatrix.com/Releases/Twisted/15.0/Twisted-15.0.0.win32-py2.7.msi}}}\f0\fs24\par
+\fs22 from from  {\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/Twisted/15.0.0"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/Twisted/15.0.0}}}\f0\fs24\par
+\fs22 XXV. Run:\tab C:\\lafs>python setup.py build  \tab\fs24\par
+\fs22\tab\tab (Start/Program files/command prompt > cd c:\\lafs)\fs24\par
+\fs22\tab\tab or like to read it all at :\tab C:\\lafs\\setup_build_bin.txt\fs24\par
+\fs22  \tab Run:\tab C:\\lafs>python setup.py build  > setup_build_bin.txt\fs24\par
+\fs22\tab\tab\tab\tab\tab\tab (go drink a cup of coffee)\fs24\par
+\b\fs22 my 10\i . Result: run throu ( it copying many somethings to -> build\\lib\\allmydata\\...\\...)\b0\i0\fs24\par
+\fs22 XXVI. Run: \tab C:\\lafs>bin\\tahoe --version\fs24\par
+\b\i\fs22 my 11.Result: \b0\i0\fs24\par
+\b\i\fs22 :0: UserWarning: You do not have a working installation of the service_identity module: 'No module named service_identity'.  Please install it from <{\field{\*\fldinst{HYPERLINK "https://pypi.python.org/pypi/service_identity"}}{\fldrslt{\ul\cf2 https://pypi.python.org/pypi/service_identity}}}\b0\i0\f0\fs24 > and make sure all of its dependencies are satisfied.  Without the service_identity module and a recent enough pyOpenSSL to support it, Twisted can perform only rudimentary TLS client hostname verification.  Many valid certificate/hostname mappings may be rejected.\par
+\b\i\fs22 allmydata-tahoe: 1.10.0 [NL]foolscap: 0.7.0 [NL]pycryptopp: 0.6.0.1206569328141510525648634803928199668821045408958 [NL]fec: 1.4.22 [NL]Twisted: 15.0.0 [NL]Nevow: 0.11.1 [NL]zope.interface: unknown [NL]python: 2.7.9 [NL]platform: Windows-7-6.1.7601-SP1 [NL]pyOpenSSL: 0.13.1 [NL]simplejson: 3.6.5 [NL]pycrypto: 2.4.1 [NL]pyasn1: 0.1.7 [NL]mock: 1.0.1 [NL]setuptools: 0.6c16dev4 [NL]=NEW LINE\b0\i0\fs24\par
+\fs22 XXVII. Run: \tab C:\\lafs>python setup.py trial (self-tests)\fs24\par
+\fs22\tab if like to read all at C:\\lafs\\trial_test_result.txt\fs24\par
+\fs22\tab Run:C:\\lafs>python setup.py trial > trial_test_result.txt\fs24\par
+\b\i\fs22 my 12. Result: FAILED (skips=7, errors=19, successes=262)\b0\i0\fs24\par
+\i\fs22 [we updated twisted but still 19 errors with twisted ]\i0\fs24\par
+\i\fs22 [i read anywhere at \i0 C:\\lafs\\trial_test_result.txt there is a problem with a temp directory, and got the idea there must be a problem with the right to write to the temp directory]\fs24\par
+\ul\b\i\fs22 Rightsmanagemant for C:\\ lafs\i0 =everybody everything\ulnone\b0\fs24\par
+\fs22 start/computer/"C:\\"/Mouse right klick at /"C:lafs"/properties/security\fs24\par
+\fs22 /edit/add/advanced/look for (users)/(select)/everybody (all)/ok/ok/select user name /everybody (all)/|V|(check)/\b allow\b0 /all/and/allow/alter/OK\fs24\par
+\fs22 maybe also\fs24\par
+\fs22 start/computer/"C:\\"/Mouse right klick at /"C:\\lafs"/properties/security\fs24\par
+\fs22 /advanced/\b owner\b0 /edit/more users and groups/advanced/look for (users)/(select)/everybody (all)/OK/OK/OK\fs24\par
+\fs22 if there is no security tab maybe you are working on \b xp home edition\b0 . \fs24\par
+\fs22 you have to restart your computer at\b  secured mode \b0\fs24\par
+\fs22 and see if it is possible to alter the \b owner\b0 ship of \fs24\par
+\fs22 "c:/lafs" or/and the \b allow\b0 ances there.\fs24\par
+\i\fs22 [we need a other version ?what requires twisted>=13.0 ?]\i0\fs24\par
+\b\i\fs22{\field{\*\fldinst{HYPERLINK "https://tahoe-lafs.org/trac/tahoe-lafs/ticket/2249"}}{\fldrslt{\ul\cf2 https://tahoe-lafs.org/trac/tahoe-lafs/ticket/2249}}}\b0\i0\f0\fs24\par
+\fs22 nevow-0.11.1-py2.7.egg:\fs24\par
+\fs22 C:\\lafs\\support\\lib\\site-packages\\nevow-0.11.1-py2.7.egg\\EGG-INFO\\requires.txt:\fs24\par
+\fs22 "twisted>=13.0"\fs24\par
+\i\fs22 [i read also at\i0\fs24\par
+\b\i\fs22{\field{\*\fldinst{HYPERLINK "http://comments.gmane.org/gmane.comp.file-systems.tahoe.devel/8336"}}{\fldrslt{\ul\cf2 http://comments.gmane.org/gmane.comp.file-systems.tahoe.devel/8336}}}\b0\i0\f0\fs24\par
+\i\fs22 we need pywin32]\i0\fs24\par
+\b\i\fs22 ->--------------------\cf2\ul 8336\cf0\ulnone --------------------\b0\i0\fs24\par
+\fs22 First install\b  Twisted 14.0 \b0\fs24\par
+\fs22 from <{\field{\*\fldinst{HYPERLINK "https://twistedmatrix.com/trac/wiki/Downloads#Windows"}}{\fldrslt{\ul\cf2 https://twistedmatrix.com/trac/wiki/Downloads#Windows}}}\f0\fs24 >.\par
+\fs22 (Make sure to get the 64-bit version in your case. It shouldn't matter whether you\fs24\par
+\fs22 use the msi or exe installer.)\fs24\par
+\fs22 Then install\b  pywin32 \b0\fs24\par
+\fs22 from< {\field{\*\fldinst{HYPERLINK "http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/"}}{\fldrslt{\ul\cf2 http://sourceforge.net/projects/pywin32/files/pywin32/Build%20219/}}}\f0\fs24  >.\par
+\fs22 You need pywin32-219.win-amd64-py2.7.exe for 64-bit Windows.\fs24\par
+\fs22 Then try the build again.\fs24\par
+\fs22 -----------------------------------------------<--\fs24\par
+\fs22 [for short i tried it again]\fs24\par
+\b\i\fs22 pre install:\b0\i0\fs24\par
+\i\fs22 python27\i0\fs24\par
+\i\fs22 tahoe 1.10.0\i0\fs24\par
+\fs22 Twisted 14.0 \fs24\par
+\fs22 pywin32 \fs24\par
+\b\fs22 FAILED (skips=14, expectedFailures=3, failures=3, errors=10, successes=1114)\b0\fs24\par
+\fs22 some failures related to service_identity\fs24\par
+\fs22 [and again]\fs24\par
+\b\fs22 post install: \b0\fs24\par
+\fs22 pip install cffi\fs24\par
+\fs22 pip install service_identity\fs24\par
+\fs22 test don't get ready after installing service_identity\fs24\par
+\fs22 [and again]\fs24\par
+\b\fs22 try post install: \b0\fs24\par
+\fs22 pip install cffi-0.8.6-cp27-none-win32.whl\fs24\par
+\fs22 pip install service_identity-14.0.0-py2.py3-none-any.whl\fs24\par
+\fs22 test don't get ready after installing service_identity\fs24\par
+\fs22 [and again]\fs24\par
+\b\fs22 pre install von:\b0\fs24\par
+\fs22 pip install cffi-0.8.6-cp27-none-win32.whl\fs24\par
+\fs22 pip install service_identity-14.0.0-py2.py3-none-any.whl\fs24\par
+\fs22 -> script likes to install cffi-0.9.1 -> no compiler error\fs24\par
+\fs22 [and again]\fs24\par
+\b\fs22 try post install: \b0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://www.lfd.uci.edu/~gohlke/pythonlibs/#cffi"}}{\fldrslt{\ul\cf2 http://www.lfd.uci.edu/~gohlke/pythonlibs/#cffi}}}\f0\fs24\par
+\fs22{\field{\*\fldinst{HYPERLINK "http://www.lfd.uci.edu/~gohlke/pythonlibs/z94jfosk/cffi-0.9.1-cp27-none-win32.whl"}}{\fldrslt{\ul\cf2 http://www.lfd.uci.edu/~gohlke/pythonlibs/z94jfosk/cffi-0.9.1-cp27-none-win32.whl}}}\f0\fs24\par
+\fs22 pip install cffi-0.9.1-cp27-none-win32.whl\fs24\par
+\fs22 -> script anyway likes to install cffi-0.9.1 -> no compiler error\fs24\par
+\fs22 [No way without compiler? at this point i nearly give up, \fs24\par
+\fs22 but remembered Twisted 13 run true, with no warnings about  service_identity.\fs24\par
+\fs22 I  tried A. - i. see above and made it ]\fs24\par
+\b\fs22 and we know now any shell from an administrator account is not an administrator shell\b0\fs24\par
+\b\fs22 this step is not necessary if you run as administrator:\b0\fs24\par
+\b\fs22 B:\b0  allowances for "C:\\lafs" :\fs24\par
+\fs22\tab\ul\b As admin \b0 selekt user "everybody"  allow everything (all) for user "everybody"(all users)\ulnone\fs24\par
+\fs22\tab\tab start/computer/"C:\\"/Mouse right click at /"C:\\lafs"/properties/security\fs24\par
+\fs22\tab\tab /edit/add/advanced/look for (users)/(select)/everybody (all)/OK/OK/\fs24\par
+\fs22\tab\tab select user name /everybody (all)/|V|(check)/\b allow\b0 /all/and/allow/alter/OK\fs24\par
+\fs22\tab (this is a translation of the "path", look out for similar expressions if necessary)\fs24\par
+\pard\nowidctlpar\cf1\b\fs22  it helps partly to shrink the failures to only one but still a fail \cf0\b0\fs24\par
+\pard\nowidctlpar\sa200\sl276\slmult1\fs22 __________________________________________________________________________\fs24\par
+\fs22 If you are attracted by errors, failures and user warnings on this Site, \fs24\par
+\pard\brdrb\brdrs\brdrw20\brdrcf1\brsp40 \nowidctlpar\sa200\sl276\slmult1\fs22 but only like to install \cf1 allmydata-tahoe-1.10.0 then \cf0 start with 0 (zero):\par
+---------------------------------------------------------------------------------------------------------\fs24\par
+\pard\nowidctlpar\sa200\sl276\slmult1\cf1\b Conclusion:\cf0\b0\par
+\cf1\b On windows; you can not only follow the \fs22 quickstart.rst \cf0\b0\fs24\par
+\cf1\b\fs22 On windows; you need pre-installation of: python27,Twisted13 and  pywin32\cf0\b0\fs24\par
+\cf1\b\fs22 On windows; you need to run the scripts as Administrator, \cf0\b0\fs24\par
+\cf1\b\fs22\tab\tab not only in an account with admin user rights.\cf0\b0\fs24\par
+}
+ 
