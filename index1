@@ -1,0 +1,478 @@
+
+Skip to content
+This repository
+
+    Explore
+    Gist
+    Blog
+    Help
+
+    @WinLAFS WinLAFS
+
+1
+0
+
+    0
+
+WinLAFS/WinLAFS-Knowledge-Base
+
+WinLAFS-Knowledge-Base/index.html
+@WinLAFS WinLAFS 6 days ago Update index.html
+
+1 contributor
+452 lines (386 sloc) 21.843 kb
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dependencies List of Tahoe-LAFS by WinLAFS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:100,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Dependencies List of Tahoe-LAFS</h1>
+      <h2 class="project-tagline">Tahoe Lafs Windows User Knowledge Base: FAQs , Scripts , HOW DOs , GUIs , DOCs , ...</h2>
+      <a href="https://github.com/WinLAFS/WinLAFS-Knowledge-Base" class="btn">View on GitHub</a>
+
+    </section>
+
+    <section class="main-content">
+      <p>
+</p>
+
+<p>
+</p>
+
+<p lang="">Dependencies
+List of Tahoe-LAFS:</p>
+<p>source:  <a href="https://tahoe-lafs.org/trac/tahoe-lafs/browser/src/allmydata/_auto_deps.py">https://tahoe-lafs.org/trac/tahoe-lafs/browser/src/allmydata/_auto_deps.py</a></p>
+<p lang="">[am
+2015-03-31T18:06:14Z]</p>
+<p lang=""><br><br>
+</p>
+
+<p lang=""><b>for
+platform win32 :</b></p>
+<p lang=""><br><br>
+</p>
+
+<p><b>phyton</b>
+2.7.9 [actual 2015.4.18]</p>
+<p><a href="https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64.msi"><b>https://www.python.org/ftp/python/2.7.9/python-2.7.9.amd64.msi</b></a><b>
+[64bit]</b></p>
+<p><a href="https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi"><b>https://www.python.org/ftp/python/2.7.9/python-2.7.9.msi</b></a><b>
+[32bit]</b></p>
+<p><b>setuptools
+</b>&gt;=
+0.6c6</p>
+<p><a href="https://bootstrap.pypa.io/ez_setup.py">https://bootstrap.pypa.io/ez_setup.py</a></p>
+<p lang="">
+[python
+ez_setup.py]</p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>zfec</b>
+&gt;= 1.1.0</p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zfec-1.4.22-py2.7-win32.egg"><b>https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zfec-1.4.22-py2.7-win32.egg</b></a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zfec-1.4.22-py2.7-win-amd64.egg"><b>https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zfec-1.4.22-py2.7-win-amd64.egg</b></a></p>
+<p><a href="https://pypi.python.org/packages/source/z/zfec/zfec-1.4.24.tar.gz">https://pypi.python.org/packages/source/z/zfec/zfec-1.4.24.tar.gz</a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>simplejson
+</b>&gt;=
+1.4</p>
+<p><a href="https://pypi.python.org/packages/source/s/simplejson/simplejson-3.6.5.tar.gz"><b>https://pypi.python.org/packages/source/s/simplejson/simplejson-3.6.5.tar.gz</b></a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/simplejson-3.1.3.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/simplejson-3.1.3.tar.gz</a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>zope.interface
+</b>&gt;=
+3.6.0, != 3.6.3, != 3.6.4    [!=not]</p>
+<p><a href="https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2-py2.7-win32.egg"><b>https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2-py2.7-win32.egg</b></a></p>
+<p><a href="https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2-py2.7-win-amd64.egg"><b>https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2-py2.7-win-amd64.egg</b></a></p>
+<p><a href="https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe">https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win32-py2.7.exe</a></p>
+<p><a href="https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win-amd64-py2.7.exe">https://pypi.python.org/packages/2.7/z/zope.interface/zope.interface-4.1.2.win-amd64-py2.7.exe</a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zope.interface-3.6.1-py2.7-win32.egg">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zope.interface-3.6.1-py2.7-win32.egg</a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zope.interface-3.6.1-py2.7-win-amd64.egg">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zope.interface-3.6.1-py2.7-win-amd64.egg</a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>foolscap</b>
+&gt;= 0.6.3</p>
+<p><a href="https://pypi.python.org/packages/source/f/foolscap/foolscap-0.8.0.tar.gz"><b>https://pypi.python.org/packages/source/f/foolscap/foolscap-0.8.0.tar.gz</b></a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/foolscap-0.6.4.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/foolscap-0.6.4.tar.gz</a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>pycrypto</b>
+&gt;= 2.1.0, != 2.2, != 2.4          [!=not]    [Crypto][ v2.6 EXE accepted ?]</p>
+<p lang="">
+<br><br>
+</p>
+
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycrypto-2.4.1-py2.7-win32.egg">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycrypto-2.4.1-py2.7-win32.egg</a></p>
+
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycrypto-2.5-py2.7-win-amd64.egg">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycrypto-2.5-py2.7-win-amd64.egg</a></p>
+
+<p><a href="http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win32-py2.7.exe"><b>http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win32-py2.7.exe</b></a></p>
+
+<p><a href="http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win-amd64-py2.7.exe"><b>http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win-amd64-py2.7.exe</b></a></p>
+
+<p><a href="https://pypi.python.org/packages/source/p/pycrypto/pycrypto-2.6.1.tar.gz">https://pypi.python.org/packages/source/p/pycrypto/pycrypto-2.6.1.tar.gz</a></p>
+
+<p><a href="http://www.voidspace.org.uk/downloads/pycrypto-2.1.0.win32-py2.7.zip">http://www.voidspace.org.uk/downloads/pycrypto-2.1.0.win32-py2.7.zip</a></p>
+
+<p><a href="http://www.voidspace.org.uk/downloads/pycrypto-2.3.win32-py2.7.zip">http://www.voidspace.org.uk/downloads/pycrypto-2.3.win32-py2.7.zip</a></p>
+
+<p><a href="https://launchpadlibrarian.net/142865325/pycrypto-2.6-py2.7-win32.egg">https://launchpadlibrarian.net/142865325/pycrypto-2.6-py2.7-win32.egg</a></p>
+
+<p><a href="http://arquivos.victorjabur.com/python/modules/pycrypto-2.3.win32-py2.7.exe">http://arquivos.victorjabur.com/python/modules/pycrypto-2.3.win32-py2.7.exe</a></p>
+
+<p><a href="http://arquivos.victorjabur.com/python/modules/pycrypto-2.3.win-amd64-py2.7.exe">http://arquivos.victorjabur.com/python/modules/pycrypto-2.3.win-amd64-py2.7.exe</a></p>
+
+<p><b>mock</b>
+&gt;= 0.8.0</p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/mock-1.0.1.tar.gz"><b>https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/mock-1.0.1.tar.gz</b></a></p>
+<p><a href="https://pypi.python.org/packages/source/m/mock/mock-1.0.1.tar.gz">https://pypi.python.org/packages/source/m/mock/mock-1.0.1.tar.gz</a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>pycryptopp</b>
+&gt;= 0.6.0</p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycryptopp-0.6.0.1206569328141510525648634803928199668821045408958-py2.7-win32.egg"><b>https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycryptopp-0.6.0.1206569328141510525648634803928199668821045408958-py2.7-win32.egg</b></a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycryptopp-0.6.0.1206569328141510525648634803928199668821045408958-py2.7-win-amd64.egg"><b>https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycryptopp-0.6.0.1206569328141510525648634803928199668821045408958-py2.7-win-amd64.egg</b></a></p>
+<p lang="">
+--------------------------------------------------------------------------------------------------------------</p>
+<p lang="">
+[Preinstallation
+of pyOpenSSL &gt;= 0.14 possible]</p>
+<p><b>pyOpenSSL
+</b>&gt;=
+0.13, &lt;= 0.13.1  +   OpenSSL &gt;=1.0.1g     =&gt; selfcompiled .EGG</p>
+<p><a href="https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-0.13.1.tar.gz#md5=e27a3b76734c39ea03952ca94cc56715">https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-0.13.1.tar.gz#md5=e27a3b76734c39ea03952ca94cc56715</a></p>
+<p><a href="https://pypi.python.org/packages/2.7/p/pyOpenSSL/pyOpenSSL-0.13.1.win32-py2.7.exe"><b>https://pypi.python.org/packages/2.7/p/pyOpenSSL/pyOpenSSL-0.13.1.win32-py2.7.exe</b></a></p>
+<p lang=""><b>                 pyOpenSSL-0.13.1-1.0.2a-py2.7-win-amd64.egg</b></p>
+<p><a href="https://pypi.python.org/packages/2.7/p/pyOpenSSL/pyOpenSSL-0.13.1.win-amd64-py2.7.exe"><b>https://pypi.python.org/packages/2.7/p/pyOpenSSL/pyOpenSSL-0.13.1.win-amd64-py2.7.exe</b></a><b>                </b></p>
+<p>[pyOpenSSL
+&gt;= 0.13, &lt;= 0.13.1    +   OpenSSL = oldvulnerable=<b>heartbleed</b>
+]</p>
+<p><b>[
+</b>pyOpenSSL
+&gt;= 0.14  =&gt;   new dependencies</p>
+<p><a href="https://pypi.python.org/packages/py2.py3/p/pyOpenSSL/pyOpenSSL-0.15.1-py2.py3-none-any.whl">https://pypi.python.org/packages/py2.py3/p/pyOpenSSL/pyOpenSSL-0.15.1-py2.py3-none-any.whl</a></p>
+<p>[see
+<b>dependencies-chain
+of nevow 0.11.1</b>*
+because of 
+</p>
+
+<p lang="en-US">
+[heartbleed
+ and "error: Setup script exited with error: Unable to find
+vcvarsall.bat"]</p>
+<p>[anyway
+we should use a newer pyopenssl version or compile ourself one with
+an reasonable SSL version ==&gt;
+<b>pyOpenSSL-0.13.1-1.0.2a-py2.7-win-amd64.egg</b>]</p>
+<p lang="">
+---------------------------------------------------------------------------------------------------------------------</p>
+<p lang=""><b>cryptography</b></p>
+<p><a href="https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.8.2-cp27-none-win32.whl">https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.8.2-cp27-none-win32.whl</a></p>
+<p><a href="https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.8.2-cp27-none-win_amd64.whl">https://pypi.python.org/packages/cp27/c/cryptography/cryptography-0.8.2-cp27-none-win_amd64.whl</a></p>
+<p lang="">
+[tahoe-lafs
+script dont like .whl ]</p>
+<p><b>cffi</b>  [=compiler
+error 
+"error: Setup script exited with error: Unable to find
+vcvarsall.bat"]</p>
+<p><a href="https://pypi.python.org/packages/cp27/c/cffi/cffi-0.9.2-cp27-none-win32.whl">https://pypi.python.org/packages/cp27/c/cffi/cffi-0.9.2-cp27-none-win32.whl</a></p>
+<p><a href="https://pypi.python.org/packages/cp27/c/cffi/cffi-0.9.2-cp27-none-win_amd64.whl">https://pypi.python.org/packages/cp27/c/cffi/cffi-0.9.2-cp27-none-win_amd64.whl</a></p>
+<p><a href="http://www.lfd.uci.edu/~gohlke/pythonlibs/6icuform/cffi-0.9.2-cp27-none-win32.whl">http://www.lfd.uci.edu/~gohlke/pythonlibs/6icuform/cffi-0.9.2-cp27-none-win32.whl</a></p>
+<p><a href="http://www.lfd.uci.edu/%7Egohlke/pythonlibs/6icuform/cffi-0.9.2-cp27-none-win_amd64.whl">http://www.lfd.uci.edu/%7Egohlke/pythonlibs/6icuform/cffi-0.9.2-cp27-none-win_amd64.whl</a></p>
+<p lang="">
+[tahoe-lafs
+script dont like .whl ]</p>
+<p lang=""><b>six</b></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/six-1.9.0.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/six-1.9.0.tar.gz</a>
+(404)</p>
+<p><a href="https://pypi.python.org/packages/source/s/six/six-1.9.0.tar.gz"><b>https://pypi.python.org/packages/source/s/six/six-1.9.0.tar.gz</b></a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>enum34
+</b>   +
+    enum</p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/enum34-1.0.4.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/enum34-1.0.4.tar.gz</a>
+(404)</p>
+<p><a href="https://pypi.python.org/packages/source/e/enum34/enum34-1.0.4.tar.gz"><b>https://pypi.python.org/packages/source/e/enum34/enum34-1.0.4.tar.gz</b></a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p lang=""><b>pycparser</b></p>
+
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycparser-2.10.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pycparser-2.10.tar.gz</a>
+(404)</p>
+<p><a href="https://pypi.python.org/packages/source/p/pycparser/pycparser-2.10.tar.gz"><b>https://pypi.python.org/packages/source/p/pycparser/pycparser-2.10.tar.gz</b></a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>pyasn1</b>
+&gt;= 0.0.8a    <b>   ]</b></p>
+<p><a href="https://pypi.python.org/packages/2.7/p/pyasn1/pyasn1-0.1.7-py2.7.egg"><b>https://pypi.python.org/packages/2.7/p/pyasn1/pyasn1-0.1.7-py2.7.egg</b></a></p>
+<p><a href="https://pypi.python.org/packages/2.7/p/pyasn1-modules/pyasn1_modules-0.0.5-py2.7.egg"><b>https://pypi.python.org/packages/2.7/p/pyasn1-modules/pyasn1_modules-0.0.5-py2.7.egg</b></a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pyasn1-0.1.6.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pyasn1-0.1.6.tar.gz</a>
+(404)</p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pyasn1-modules-0.0.5.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pyasn1-modules-0.0.5.tar.gz</a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p lang="">
+---------------------------------</p>
+<p lang="">
+[no
+conflicts]</p>
+<p lang=""><b>argparse</b></p>
+<p><a href="https://pypi.python.org/packages/source/a/argparse/argparse-1.3.0.tar.gz"><b>https://pypi.python.org/packages/source/a/argparse/argparse-1.3.0.tar.gz</b></a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/argparse-1.2.1.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/argparse-1.2.1.tar.gz</a>
+(404)</p>
+<p lang=""><b>pyutil</b></p>
+<p><a href="https://pypi.python.org/packages/source/p/pyutil/pyutil-2.0.0.tar.gz"><b>https://pypi.python.org/packages/source/p/pyutil/pyutil-2.0.0.tar.gz</b></a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pyutil-1.9.4.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/pyutil-1.9.4.tar.gz</a>
+(404)</p>
+<p lang=""><b>zbase32</b></p>
+<p><a href="https://pypi.python.org/packages/source/z/zbase32/zbase32-1.1.5.tar.gz"><b>https://pypi.python.org/packages/source/z/zbase32/zbase32-1.1.5.tar.gz</b></a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zbase32-1.1.5.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/zbase32-1.1.5.tar.gz</a>
+(404)</p>
+<p lang=""><b>distribute</b></p>
+<p><a href="https://pypi.python.org/packages/source/d/distribute/distribute-0.7.3.zip">https://pypi.python.org/packages/source/d/distribute/distribute-0.7.3.zip</a></p>
+<p lang="">
+[for
+setuptools ?]</p>
+<p lang="">
+----------------------------------</p>
+<p lang=""><b>twisted-web,
+twisted-core, twisted-conch</b></p>
+<p lang="">
+[win32]</p>
+<p><b>Twisted</b>
+&gt;= 11.1.0, &lt;= 12.1.0</p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/Twisted-12.1.0-py2.7-win32.egg">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/Twisted-12.1.0-py2.7-win32.egg</a></p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/Twisted-12.1.0-py2.7-win-amd64.egg">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/Twisted-12.1.0-py2.7-win-amd64.egg</a></p>
+<p><a href="https://pypi.python.org/packages/2.7/T/Twisted/Twisted-12.1.0.win-amd64-py2.7.exe">https://pypi.python.org/packages/2.7/T/Twisted/Twisted-12.1.0.win-amd64-py2.7.exe</a></p>
+<p><a href="https://pypi.python.org/packages/2.7/T/Twisted/Twisted-12.1.0.win32-py2.7.exe">https://pypi.python.org/packages/2.7/T/Twisted/Twisted-12.1.0.win32-py2.7.exe</a></p>
+<p><a href="https://pypi.python.org/packages/2.7/T/Twisted/Twisted-12.1.0.win32-py2.7.msi">https://pypi.python.org/packages/2.7/T/Twisted/Twisted-12.1.0.win32-py2.7.msi</a></p>
+<p lang="">
+<br><br>
+</p>
+
+<p><b>Nevow</b>
+&gt;= 0.9.33, &lt;= 0.10</p>
+<p lang="">
+        
+[ this prevents dependencies-chain of nevow 0.11.1</p>
+<p lang="en-US">
+"error:
+Installed distribution twisted 12.1.0 conflicts with requirement
+twisted&gt;=13.0"]</p>
+<p lang="">
+<br><br>
+</p>
+
+<p lang="">
+<br><br>
+</p>
+
+<p><a href="https://pypi.python.org/packages/source/N/Nevow/Nevow-0.10.0.tar.gz">https://pypi.python.org/packages/source/N/Nevow/Nevow-0.10.0.tar.gz</a></p>
+
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/Nevow-0.10.0.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-eggs/Nevow-0.10.0.tar.gz</a></p>
+
+<p lang="">
+<br><br>
+</p>
+
+<p lang="">
+apendix:
+
+</p>
+
+<p lang=""><b>dependencies-chain
+of nevow 0.11.1</b></p>
+<p lang="">
+------------dependencies-chain-------win64------tahoe-1.10.0--------------------------------------------</p>
+<p><b>Nevow
+-- Twisted -- </b><b>service-identity
+-- |</b></p>
+<p lang="en-US">    
+                                                              <b>|--
+pyopenssl -- cryptography -- cffi -- pycparser</b></p>
+<p>                 
+                                                 <b>|--
+</b><b>pyopenssl
+-- six</b></p>
+<p>Nevow&gt;=0.6.0  ==&gt;  Nevow-0.11.1.</p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-sdists/Nevow-0.11.1.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-sdists/Nevow-0.11.1.tar.gz</a></p>
+<p>Nevow-0.11.1.
+==&gt;  <b>error:
+</b>
+</p>
+
+<p lang="en-US"><b>Installed
+distribution twisted 12.1.0 conflicts with requirement twisted&gt;=13.0</b></p>
+<p>Nevow-0.11.1.
+  ==&gt; twisted&gt;=13.0
+
+</p>
+
+<p> twisted&gt;=13.0
+  ==&gt;  Twisted-13.0.0
+
+</p>
+
+<p> Twisted-13.0.0
+==&gt;  service-identity==14.0.0
+   
+</p>
+
+<p lang="en-US">service-identity==14.0.0
+   ==&gt; pyopenssl&gt;=0.12    </p>
+<p lang="en-US">
+pyopenssl&gt;=0.12
+ ==&gt; pyopenssl-0.13.8-py2.7-win-amd64.egg     
+</p>
+
+<p><a href="https://downloads.egenix.com/python/index/ucs2/egenix-pyopenssl/0.13.8/egenix_pyopenssl-0.13.8-py2.7-win-amd64.egg">https://downloads.egenix.com/python/index/ucs2/egenix-pyopenssl/0.13.8/egenix_pyopenssl-0.13.8-py2.7-win-amd64.egg</a></p>
+
+<p lang="en-US">
+(this
+includes OpenSSL 1.0.1m + deps   ==&gt; cryptography&gt;=0.2.1 
+    ==&gt;  cffi&gt;=0.8 )</p>
+<p lang="en-US">
+[better
+no heartbleed , no error: Setup script exited with error: Unable to
+find vcvarsall.bat]</p>
+<p lang="en-US">
+<br><br>
+</p>
+
+<p lang="en-US">
+[can
+present .exe ? maybe jes ! but have actual eggenix EGGs
+pyopenssl-0.13.8-py2.7-win-amd64.egg]</p>
+<p><a href="https://pypi.python.org/packages/2.7/p/pyOpenSSL/pyOpenSSL-0.13.1.win-amd64-py2.7.exe">https://pypi.python.org/packages/2.7/p/pyOpenSSL/pyOpenSSL-0.13.1.win-amd64-py2.7.exe</a></p>
+<p lang="">
+[possible
+heartbleed because upload date is 2013-09-04 but SSL  1.0.1g release
+2014-04-07]</p>
+<p lang="">
+[anyway
+we should use a newer pyopenssl version or compile ourself one]</p>
+<p lang="">
+-------------------------dependencies-chain-------win32------tahoe-1.10.0--------------------------</p>
+<p><b>Nevow
+-- Twisted -- </b><b>service-identity
+-- |</b></p>
+<p lang="en-US">
+                                                                  
+<b>|--
+pyopenssl -- cryptography -- cffi -- pycparser</b></p>
+<p>
+                                                                  
+<b>|--
+</b><b>pyopenssl
+-- six</b></p>
+<p>Nevow&gt;=0.6.0    ==&gt;  Nevow-0.11.1</p>
+<p><a href="https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-sdists/Nevow-0.11.1.tar.gz">https://tahoe-lafs.org/source/tahoe-lafs/deps/tahoe-lafs-dep-sdists/Nevow-0.11.1.tar.gz</a></p>
+<p>Nevow-0.11.1.
+==&gt; <b>error:
+</b>
+</p>
+
+<p lang="en-US"><b>Installed
+distribution twisted 12.1.0 conflicts with requirement twisted&gt;=13.0</b></p>
+<p>Nevow-0.11.1.
+  ==&gt; twisted&gt;=13.0
+
+</p>
+
+<p> twisted&gt;=13.0
+  ==&gt;  Twisted-13.0.0
+
+</p>
+
+<p> Twisted-13.0.0
+==&gt;  service-identity==14.0.0
+   
+</p>
+
+<p lang="en-US">service-identity==14.0.0
+   ==&gt; pyopenssl&gt;=0.12    </p>
+<p>pyopenssl&gt;=0.12
+ ==&gt;  pyOpenSSL/pyOpenSSL-0.13.1.win32-py2.7.exe  </p>
+<p><a href="https://pypi.python.org/packages/2.7/p/pyOpenSSL/pyOpenSSL-0.13.1.win32-py2.7.exe">https://pypi.python.org/packages/2.7/p/pyOpenSSL/pyOpenSSL-0.13.1.win32-py2.7.exe</a></p>
+<p lang="">
+[possible
+heartbleed because upload date is 2013-09-04 but SSL  1.0.1g release
+2014-04-07]</p>
+<p lang="">
+[anyway
+we should use a newer pyopenssl version or compile ourself one (with
+LibreSSL ?]</p>
+<p lang="">
+try
+to present the egenix EGG</p>
+<p><a href="https://downloads.egenix.com/python/index/ucs2/egenix-pyopenssl/0.13.8/egenix_pyopenssl-0.13.8-py2.7-win32.egg">https://downloads.egenix.com/python/index/ucs2/egenix-pyopenssl/0.13.8/egenix_pyopenssl-0.13.8-py2.7-win32.egg</a></p>
+<p lang="">
+-----------------------------------------------------------------------------------------------------------------</p>
+<p lang="">
+note
+for later:</p>
+<p lang="">
+we
+learned the tahoe-lafs script is not able to realise</p>
+<p lang="">
+pip
+installed .whl dependencies 
+</p>
+
+<p lang="">
+---------------------------------------------------------------------------------------------------------------------</p>
+<p><br><br>
+</p>
+
+<p>
+</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/WinLAFS/WinLAFS-Knowledge-Base">Dependencies List of Tahoe-LAFS</a> is maintained by <a href="https://github.com/WinLAFS">WinLAFS</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
+    Status API Training Shop Blog About 
+
+    © 2015 GitHub, Inc. Terms Privacy Security Contact 
+
