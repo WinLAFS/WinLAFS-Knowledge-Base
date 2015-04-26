@@ -334,6 +334,6 @@ but only like to install allmydata-tahoe-1.10.0 then start with 0 (zero):
             
 
 
-how do RTF to RST: RTF > openoffice > file/preview in web browser > firefox/extras/web-dev/source Copy All > 
+            how do RTF to RST: RTF > openoffice > file/preview in web browser > firefox/extras/web-dev/source Copy All > 
             GO TO > https://foliovision.com/seo-tools/pandoc-online# > PASTE |html| to |reStructuredText| (GO)
             COPY ALL of Result
