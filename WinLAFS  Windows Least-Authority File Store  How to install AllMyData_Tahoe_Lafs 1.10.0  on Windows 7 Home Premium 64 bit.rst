@@ -330,6 +330,9 @@ but only like to install allmydata-tahoe-1.10.0 then start with 0 (zero):
 
 **On windows 64 you need additional**\ **egenix\_pyopenssl-0.13.7-py2.7-win-amd64.egg**
 
+            
+            
+
 
 how do RTF to RST: RTF > openoffice > file/preview in web browser > firefox/extras/web-dev/source Copy All > 
             GO TO > https://foliovision.com/seo-tools/pandoc-online# > PASTE |html| to |reStructuredText| (GO)
